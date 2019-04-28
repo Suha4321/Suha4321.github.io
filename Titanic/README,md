@@ -1,0 +1,5 @@
+The aim is to look at the survival rates of the titanic passengers to understand what might be the potatial driving factors.
+We make used of python seaborn library to visualize this.
+
+The data set is taken from Kaggle and can be found here - https://www.kaggle.com/c/titanic/data
+For this exercise we will be using train dataset as it has the column indicating the survival. 
