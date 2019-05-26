@@ -1,35 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>Suha's Blog</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suha's Blog Atom Feed" />
-</head>
-
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Suha's Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/category/analysis.html">Analysis</a></li>
-                    <li><a href="/category/posts.html">posts</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/chinook-music-store.html">If I am a music store manager</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2019-05-25T20:00:00-04:00">
-                Published: Sat 25 May 2019
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/suhasini-radhakrishnan.html">Suhasini Radhakrishnan</a>
-        </address>
-<p>In <a href="/category/analysis.html">Analysis</a>.</p>
-<p>tags: <a href="/tag/python-sqlite3.html">python Sqlite3</a> </p>
-</footer><!-- /.post-info --><style type="text/css">/*!
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suha's Blog - Analysis</title><link href="/" rel="alternate"></link><link href="/feeds/analysis.atom.xml" rel="self"></link><id>/</id><updated>2019-05-25T20:00:00-04:00</updated><entry><title>If I am a music store manager</title><link href="/chinook-music-store.html" rel="alternate"></link><published>2019-05-25T20:00:00-04:00</published><updated>2019-05-25T20:00:00-04:00</updated><author><name>Suhasini Radhakrishnan</name></author><id>tag:None,2019-05-25:/chinook-music-store.html</id><summary type="html">&lt;p&gt;Analyzing music store data with pandas and Sqlite&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -256,7 +226,7 @@ div.unrecognized_cell .inner_cell a:hover {
   text-decoration: none;
 }
 @media (max-width: 540px) {
-  div.unrecognized_cell > div.prompt {
+  div.unrecognized_cell &gt; div.prompt {
     display: none;
   }
 }
@@ -309,19 +279,19 @@ div.input_prompt {
   color: #303F9F;
   border-top: 1px solid transparent;
 }
-div.input_area > div.highlight {
+div.input_area &gt; div.highlight {
   margin: 0.4em;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-div.input_area > div.highlight > pre {
+div.input_area &gt; div.highlight &gt; pre {
   margin: 0px;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-/* The following gets added to the <head> if it is detected that the user has a
+/* The following gets added to the &lt;head&gt; if it is detected that the user has a
  * monospace font with inconsistent normal/bold/italic height.  See
  * notebookmain.js.  Such fonts will have keywords vertically offset with
  * respect to the rest of the text.  The user should select a better font.
@@ -367,7 +337,7 @@ div.input_area > div.highlight > pre {
 }
 /*
 
-Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
 Adapted from GitHub theme
 
 */
@@ -829,7 +799,7 @@ div.text_cell {
   align-items: stretch;
 }
 @media (max-width: 540px) {
-  div.text_cell > div.prompt {
+  div.text_cell &gt; div.prompt {
     display: none;
   }
 }
@@ -894,8 +864,8 @@ h6:hover .anchor-link {
   font-size: 100%;
   font-style: italic;
 }
-</style>
-<style type="text/css">.highlight .hll { background-color: #ffffcc }
+&lt;/style&gt;
+&lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -963,8 +933,8 @@ h6:hover .anchor-link {
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
-<style type="text/css">
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
+&lt;style type="text/css"&gt;
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -1000,100 +970,100 @@ h6:hover .anchor-link {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
-</style>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="If-you-are-a-music-store-manager">If you are a music store manager<a class="anchor-link" href="#If-you-are-a-music-store-manager">&#182;</a></h1><p>In this project we will use Chinook DB to to analyse some questions. chinook DB can be found here in github - 
-<a href="https://github.com/lerocha/chinook-database">https://github.com/lerocha/chinook-database</a></p>
-<p>The projects uses sqlite and pandas dataframe. The integration with SQLite makes it easier to excute select, filter and sort commands in the Db, while plotting the data and groupby are more convienient in pandas.</p>
-<p>We will explore a series of business questions and analyse the data to find answers.|</p>
+&lt;/style&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="If-you-are-a-music-store-manager"&gt;If you are a music store manager&lt;a class="anchor-link" href="#If-you-are-a-music-store-manager"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;In this project we will use Chinook DB to to analyse some questions. chinook DB can be found here in github - 
+&lt;a href="https://github.com/lerocha/chinook-database"&gt;https://github.com/lerocha/chinook-database&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The projects uses sqlite and pandas dataframe. The integration with SQLite makes it easier to excute select, filter and sort commands in the Db, while plotting the data and groupby are more convienient in pandas.&lt;/p&gt;
+&lt;p&gt;We will explore a series of business questions and analyse the data to find answers.|&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib.style</span> <span class="k">as</span> <span class="nn">style</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">mp</span>
-<span class="kn">import</span> <span class="nn">sqlite3</span>
-</pre></div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[49]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.style&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;style&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;mp&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sqlite3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Establish-connection-to-the-database-and-create-basic-functions">Establish connection to the database and create basic functions<a class="anchor-link" href="#Establish-connection-to-the-database-and-create-basic-functions">&#182;</a></h2>
-<pre><code>1) We will use sqlite inbuilt context manager to establish connection to the database, 
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Establish-connection-to-the-database-and-create-basic-functions"&gt;Establish connection to the database and create basic functions&lt;a class="anchor-link" href="#Establish-connection-to-the-database-and-create-basic-functions"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;1) We will use sqlite inbuilt context manager to establish connection to the database, 
     so that we do not overwrite on the any of the tables.
 2) we will write a functions that is used to run queries that return non table objects like views
-3) we will write a funciton that gives us a list of all table and view in the DB</code></pre>
+3) we will write a funciton that gives us a list of all table and view in the DB&lt;/code&gt;&lt;/pre&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[330]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">db_file</span> <span class="o">=</span> <span class="s1">&#39;/Users/Suha/Projects/TestGitHub/Chinook/chinook-database-master/ChinookDatabase/DataSources/Chinook_Sqlite.sqlite&#39;</span>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[330]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;db_file&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/Users/Suha/Projects/TestGitHub/Chinook/chinook-database-master/ChinookDatabase/DataSources/Chinook_Sqlite.sqlite&amp;#39;&lt;/span&gt;
 
-<span class="c1">#make a funciton to use context manager to connect to the database and reutrns the result as pd dataframe</span>
-<span class="k">def</span> <span class="nf">run_query</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
-    <span class="k">with</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">db_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+&lt;span class="c1"&gt;#make a funciton to use context manager to connect to the database and reutrns the result as pd dataframe&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;sqlite3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;db_file&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_sql_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-<span class="c1"># make a function to run queries that do not return table but views</span>
-<span class="k">def</span> <span class="nf">run_command</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
-    <span class="k">with</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">db_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
-        <span class="n">conn</span><span class="o">.</span><span class="n">isolation_level</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># this commits all the changes in the DB before the command is executed</span>
-        <span class="n">conn</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>             <span class="c1"># this executes the command that is passed in as a parameter</span>
+&lt;span class="c1"&gt;# make a function to run queries that do not return table but views&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;sqlite3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;db_file&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isolation_level&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt; &lt;span class="c1"&gt;# this commits all the changes in the DB before the command is executed&lt;/span&gt;
+        &lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;execute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;             &lt;span class="c1"&gt;# this executes the command that is passed in as a parameter&lt;/span&gt;
         
-<span class="c1"># make function to show the list of table and the view in db</span>
-<span class="k">def</span> <span class="nf">show_table</span><span class="p">():</span>
-    <span class="n">q</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;SELECT </span>
-<span class="s1">                Name</span>
-<span class="s1">                , Type</span>
-<span class="s1">            FROM sqlite_master</span>
-<span class="s1">            WHERE type IN (&#39;table&#39;,&#39;view&#39;);&#39;&#39;&#39;</span>
-    <span class="k">return</span> <span class="n">run_query</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+&lt;span class="c1"&gt;# make function to show the list of table and the view in db&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;show_table&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;q&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;                Name&lt;/span&gt;
+&lt;span class="s1"&gt;                , Type&lt;/span&gt;
+&lt;span class="s1"&gt;            FROM sqlite_master&lt;/span&gt;
+&lt;span class="s1"&gt;            WHERE type IN (&amp;#39;table&amp;#39;,&amp;#39;view&amp;#39;);&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-<span class="n">show_table</span><span class="p">()</span>
+&lt;span class="n"&gt;show_table&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
-<span class="n">q1</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;select * from track&#39;&#39;&#39;</span>
-<span class="n">q2</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;select * from InvoiceLine&#39;&#39;&#39;</span>
-<span class="n">run_query</span><span class="p">(</span><span class="n">q1</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
+&lt;span class="n"&gt;q1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;select * from track&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;q2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;select * from InvoiceLine&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[330]:</div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[330]:&lt;/div&gt;
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1105,144 +1075,144 @@ h6:hover .anchor-link {
     .dataframe thead th {
         text-align: right;
     }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>TrackId</th>
-      <th>Name</th>
-      <th>AlbumId</th>
-      <th>MediaTypeId</th>
-      <th>GenreId</th>
-      <th>Composer</th>
-      <th>Milliseconds</th>
-      <th>Bytes</th>
-      <th>UnitPrice</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>For Those About To Rock (We Salute You)</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Angus Young, Malcolm Young, Brian Johnson</td>
-      <td>343719</td>
-      <td>11170334</td>
-      <td>0.99</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>Balls to the Wall</td>
-      <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>None</td>
-      <td>342562</td>
-      <td>5510424</td>
-      <td>0.99</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>Fast As a Shark</td>
-      <td>3</td>
-      <td>2</td>
-      <td>1</td>
-      <td>F. Baltes, S. Kaufman, U. Dirkscneider &amp; W. Ho...</td>
-      <td>230619</td>
-      <td>3990994</td>
-      <td>0.99</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>Restless and Wild</td>
-      <td>3</td>
-      <td>2</td>
-      <td>1</td>
-      <td>F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. D...</td>
-      <td>252051</td>
-      <td>4331779</td>
-      <td>0.99</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>Princess of the Dawn</td>
-      <td>3</td>
-      <td>2</td>
-      <td>1</td>
-      <td>Deaffy &amp; R.A. Smith-Diesel</td>
-      <td>375418</td>
-      <td>6290521</td>
-      <td>0.99</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;TrackId&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;AlbumId&lt;/th&gt;
+      &lt;th&gt;MediaTypeId&lt;/th&gt;
+      &lt;th&gt;GenreId&lt;/th&gt;
+      &lt;th&gt;Composer&lt;/th&gt;
+      &lt;th&gt;Milliseconds&lt;/th&gt;
+      &lt;th&gt;Bytes&lt;/th&gt;
+      &lt;th&gt;UnitPrice&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;For Those About To Rock (We Salute You)&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Angus Young, Malcolm Young, Brian Johnson&lt;/td&gt;
+      &lt;td&gt;343719&lt;/td&gt;
+      &lt;td&gt;11170334&lt;/td&gt;
+      &lt;td&gt;0.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Balls to the Wall&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;None&lt;/td&gt;
+      &lt;td&gt;342562&lt;/td&gt;
+      &lt;td&gt;5510424&lt;/td&gt;
+      &lt;td&gt;0.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Fast As a Shark&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;F. Baltes, S. Kaufman, U. Dirkscneider &amp;amp; W. Ho...&lt;/td&gt;
+      &lt;td&gt;230619&lt;/td&gt;
+      &lt;td&gt;3990994&lt;/td&gt;
+      &lt;td&gt;0.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Restless and Wild&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. D...&lt;/td&gt;
+      &lt;td&gt;252051&lt;/td&gt;
+      &lt;td&gt;4331779&lt;/td&gt;
+      &lt;td&gt;0.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Princess of the Dawn&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Deaffy &amp;amp; R.A. Smith-Diesel&lt;/td&gt;
+      &lt;td&gt;375418&lt;/td&gt;
+      &lt;td&gt;6290521&lt;/td&gt;
+      &lt;td&gt;0.99&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Which-genres-sell-the-most-tracks-in-the-USA?">Which genres sell the most tracks in the USA?<a class="anchor-link" href="#Which-genres-sell-the-most-tracks-in-the-USA?">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q3</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">    SELECT </span>
-<span class="s1">         c.Name Genre</span>
-<span class="s1">        , sum(b.quantity) as Quantity </span>
-<span class="s1">       FROM Track a</span>
-<span class="s1">    INNER JOIN InvoiceLine b</span>
-<span class="s1">        ON a.TrackId = b.TrackId</span>
-<span class="s1">    INNER JOIN Genre c</span>
-<span class="s1">        ON a.GenreId = c.GenreId</span>
-<span class="s1">    GROUP BY a.GenreId</span>
-<span class="s1">    ORDER BY SUM(b.quantity) DESC</span>
-<span class="s1">    </span>
-<span class="s1">&#39;&#39;&#39;</span>
-<span class="c1"># using Fivethirtyeight style to plot the result</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Which-genres-sell-the-most-tracks-in-the-USA?"&gt;Which genres sell the most tracks in the USA?&lt;a class="anchor-link" href="#Which-genres-sell-the-most-tracks-in-the-USA?"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[70]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;q3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;    SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;         c.Name Genre&lt;/span&gt;
+&lt;span class="s1"&gt;        , sum(b.quantity) as Quantity &lt;/span&gt;
+&lt;span class="s1"&gt;       FROM Track a&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN InvoiceLine b&lt;/span&gt;
+&lt;span class="s1"&gt;        ON a.TrackId = b.TrackId&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN Genre c&lt;/span&gt;
+&lt;span class="s1"&gt;        ON a.GenreId = c.GenreId&lt;/span&gt;
+&lt;span class="s1"&gt;    GROUP BY a.GenreId&lt;/span&gt;
+&lt;span class="s1"&gt;    ORDER BY SUM(b.quantity) DESC&lt;/span&gt;
+&lt;span class="s1"&gt;    &lt;/span&gt;
+&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="c1"&gt;# using Fivethirtyeight style to plot the result&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;style&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;fivethirtyeight&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-<span class="c1">#Set &#39;Genre as index and plot it as a barchart</span>
-<span class="n">run_query</span><span class="p">(</span><span class="n">q3</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">),</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
+&lt;span class="c1"&gt;#Set &amp;#39;Genre as index and plot it as a barchart&lt;/span&gt;
+&lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Genre&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;barh&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;legend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
+&lt;div class="output_area"&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
 
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAAG4CAYAAACU4pR1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+
+
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAAG4CAYAAACU4pR1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4zLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvnQurowAAIABJREFUeJzs3XdUFVfXwOEfWFAsXEVBOgIKUsQK
 ij1GoxhAo4INjDESwRZ7TeyvLRpRbDF2EnvBWCOoCIoFg2Is1wb2brArKnx/8DnxhiIq6lX2s9Zd
@@ -1888,52 +1858,52 @@ OHECgLS0NCwWywPXP1Wlp6crtz2BZNPY2EhJSQnd3d3o9Xpyc3PZsGGDco3TX/MZHBykrKyMY8eO
 SEEWQgghVEAKshBCCKECUpCFEEIIFZCCLIQQQqiAFGQhhBBCBf4BFT+tj+JOCNEAAAAASUVORK5C
 YII=
 "
->
-</div>
+&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Plotting-the-distribution-as-a-percentage">Plotting the distribution as a percentage<a class="anchor-link" href="#Plotting-the-distribution-as-a-percentage">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">genre_sort</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">q3</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Genre&#39;</span><span class="p">)</span>
-<span class="n">genre_sort</span><span class="p">[</span><span class="s1">&#39;genre_pct&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">genre_sort</span><span class="p">[</span><span class="s1">&#39;Quantity&#39;</span><span class="p">]</span><span class="o">/</span> <span class="n">genre_sort</span><span class="p">[</span><span class="s1">&#39;Quantity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span>
-
-
-<span class="n">genre_sort</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span><span class="s1">&#39;genre_pct&#39;</span><span class="p">,</span>  <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">),</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Plotting-the-distribution-as-a-percentage"&gt;Plotting the distribution as a percentage&lt;a class="anchor-link" href="#Plotting-the-distribution-as-a-percentage"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[72]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;genre_sort&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Genre&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;genre_sort&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;genre_pct&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;genre_sort&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Quantity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;genre_sort&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Quantity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;
 
 
-<div class="output_area">
-<div class="prompt"></div>
+&lt;span class="n"&gt;genre_sort&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;barh&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;genre_pct&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="n"&gt;figsize&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;legend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAAG4CAYAAACU4pR1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAAG4CAYAAACU4pR1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4zLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvnQurowAAIABJREFUeJzs3XlcT9n/wPFXWSJLHxqlPRWlRdYi
 +xiGqBiUrYxBo4ix72P/2oYRIWPszRi7jHUUUmTJRMbysZV9N9kJ9fujnzs+UxFlRO/n4/F5fOvc
@@ -2563,72 +2533,72 @@ GT969CgaGxtht9tRXV2N5uZmTE5OIikpCbW1tZDL5QJUKz6//pr671QqFcrKygCAGS6isLAQJpMJ
 ExMT8PHxQVRUFE6fPo2MjAwAzM4dbMhEREQiwO+QiYiIRIANmYiISATYkImIiESADZmIiEgE2JCJ
 iIhEgA2ZiIhIBNiQiYiIRIANmYiISATYkImIiETgDzwstQIPzEuKAAAAAElFTkSuQmCC
 "
->
-</div>
+&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Rock accounts for close to 37 percent of the genre followed by latin (17%), metal(13%) and alternative&amp; punk (11%).
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Rock accounts for close to 37 percent of the genre followed by latin (17%), metal(13%) and alternative&amp;amp; punk (11%).
 More than 50% of the qunatity is sold amongst these 4 genres.
-let us look at the artist in these 4 genre having most sales</p>
+let us look at the artist in these 4 genre having most sales&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q4</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">    SELECT </span>
-<span class="s1">          d.name artist</span>
-<span class="s1">        , sum(a.quantity) quantity</span>
-<span class="s1">    FROM InvoiceLine a</span>
-<span class="s1">    INNER JOIN Track b </span>
-<span class="s1">        ON a.TrackId = b.TrackId</span>
-<span class="s1">    INNER JOIN Album c</span>
-<span class="s1">        ON b.AlbumId = c.AlbumId</span>
-<span class="s1">    INNER JOIN Artist d</span>
-<span class="s1">        ON c.ArtistId = d.ArtistId</span>
-<span class="s1">    INNER JOIN Genre e</span>
-<span class="s1">        on b.GenreId = e.GenreId</span>
-<span class="s1">    WHERE e.name IN (&#39;Rock&#39;, &#39;Latin&#39;, &#39;Metal&#39;, &#39;Alternative &amp; Punk&#39;)</span>
-<span class="s1">    GROUP BY d.name</span>
-<span class="s1">    ORDER BY 2 DESC</span>
-<span class="s1">    &#39;&#39;&#39;</span>
-<span class="n">artist_sort</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">q4</span><span class="p">)</span>
-<span class="n">artist_sort</span><span class="p">[</span><span class="s1">&#39;artist_pct&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">artist_sort</span><span class="p">[</span><span class="s1">&#39;quantity&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">artist_sort</span><span class="p">[</span><span class="s1">&#39;quantity&#39;</span><span class="p">]</span> <span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span>
-<span class="n">artist_sort</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;artist&#39;</span> <span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-<span class="c1">#plotting the first 10 topp selling artist</span>
-<span class="n">artist_sort</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span><span class="s1">&#39;artist_pct&#39;</span><span class="p">,</span><span class="n">legend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[87]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;q4&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;    SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;          d.name artist&lt;/span&gt;
+&lt;span class="s1"&gt;        , sum(a.quantity) quantity&lt;/span&gt;
+&lt;span class="s1"&gt;    FROM InvoiceLine a&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN Track b &lt;/span&gt;
+&lt;span class="s1"&gt;        ON a.TrackId = b.TrackId&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN Album c&lt;/span&gt;
+&lt;span class="s1"&gt;        ON b.AlbumId = c.AlbumId&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN Artist d&lt;/span&gt;
+&lt;span class="s1"&gt;        ON c.ArtistId = d.ArtistId&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN Genre e&lt;/span&gt;
+&lt;span class="s1"&gt;        on b.GenreId = e.GenreId&lt;/span&gt;
+&lt;span class="s1"&gt;    WHERE e.name IN (&amp;#39;Rock&amp;#39;, &amp;#39;Latin&amp;#39;, &amp;#39;Metal&amp;#39;, &amp;#39;Alternative &amp;amp; Punk&amp;#39;)&lt;/span&gt;
+&lt;span class="s1"&gt;    GROUP BY d.name&lt;/span&gt;
+&lt;span class="s1"&gt;    ORDER BY 2 DESC&lt;/span&gt;
+&lt;span class="s1"&gt;    &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;artist_sort&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;artist_sort&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;artist_pct&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;artist_sort&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;quantity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;artist_sort&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;quantity&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;
+&lt;span class="n"&gt;artist_sort&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;artist&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;#plotting the first 10 topp selling artist&lt;/span&gt;
+&lt;span class="n"&gt;artist_sort&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;barh&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;artist_pct&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;legend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
+&lt;div class="output_area"&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
 
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnQAAAEJCAYAAAAdPbpNAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+
+
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnQAAAEJCAYAAAAdPbpNAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4zLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvnQurowAAIABJREFUeJzs3XlYjen/wPH3SbaIk6U9RYukZMa+
 xthlyyAajGUG2Rq7sZsy1jGWyswY2whjl31rLGXPEmNJUnxnEIMYQnLO7w+X5zdHO1GHz+u6znV5
@@ -2994,63 +2964,63 @@ iISEBFRWVsLc3ByffvopFi5cKLr1vr/99humTJmCkydPwt3dXeg4LHREREREYsc1dEREREQix0JH
 REREJHIsdEREREQix0JHREREJHIsdEREREQix0JHREREJHIsdEREREQix0JHREREJHIsdEREREQi
 938uvw+yLlK8ywAAAABJRU5ErkJggg==
 "
->
-</div>
+&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The tracks of iron maiden, U2 and metallica are top selling in the top 4 genre.
-Now lets us go ahead and see which artist sells the most tracks independent of genre.</p>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The tracks of iron maiden, U2 and metallica are top selling in the top 4 genre.
+Now lets us go ahead and see which artist sells the most tracks independent of genre.&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q5</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">    SELECT </span>
-<span class="s1">          d.name artist</span>
-<span class="s1">        , sum(a.quantity) quantity</span>
-<span class="s1">    FROM InvoiceLine a</span>
-<span class="s1">    INNER JOIN Track b </span>
-<span class="s1">        ON a.TrackId = b.TrackId</span>
-<span class="s1">    INNER JOIN Album c</span>
-<span class="s1">        ON b.AlbumId = c.AlbumId</span>
-<span class="s1">    INNER JOIN Artist d</span>
-<span class="s1">        ON c.ArtistId = d.ArtistId</span>
-<span class="s1">    GROUP BY d.name</span>
-<span class="s1">    ORDER BY 2 DESC</span>
-<span class="s1">    &#39;&#39;&#39;</span>
-<span class="n">run_query</span><span class="p">(</span><span class="n">q5</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[89]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;q5&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;    SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;          d.name artist&lt;/span&gt;
+&lt;span class="s1"&gt;        , sum(a.quantity) quantity&lt;/span&gt;
+&lt;span class="s1"&gt;    FROM InvoiceLine a&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN Track b &lt;/span&gt;
+&lt;span class="s1"&gt;        ON a.TrackId = b.TrackId&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN Album c&lt;/span&gt;
+&lt;span class="s1"&gt;        ON b.AlbumId = c.AlbumId&lt;/span&gt;
+&lt;span class="s1"&gt;    INNER JOIN Artist d&lt;/span&gt;
+&lt;span class="s1"&gt;        ON c.ArtistId = d.ArtistId&lt;/span&gt;
+&lt;span class="s1"&gt;    GROUP BY d.name&lt;/span&gt;
+&lt;span class="s1"&gt;    ORDER BY 2 DESC&lt;/span&gt;
+&lt;span class="s1"&gt;    &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[89]:</div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[89]:&lt;/div&gt;
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3062,113 +3032,113 @@ Now lets us go ahead and see which artist sells the most tracks independent of g
     .dataframe thead th {
         text-align: right;
     }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>artist</th>
-      <th>quantity</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Iron Maiden</td>
-      <td>140</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>U2</td>
-      <td>107</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Metallica</td>
-      <td>91</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Led Zeppelin</td>
-      <td>87</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Os Paralamas Do Sucesso</td>
-      <td>45</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;artist&lt;/th&gt;
+      &lt;th&gt;quantity&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;Iron Maiden&lt;/td&gt;
+      &lt;td&gt;140&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;U2&lt;/td&gt;
+      &lt;td&gt;107&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;Metallica&lt;/td&gt;
+      &lt;td&gt;91&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;Led Zeppelin&lt;/td&gt;
+      &lt;td&gt;87&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;Os Paralamas Do Sucesso&lt;/td&gt;
+      &lt;td&gt;45&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>IronMaiden , U2 and metallic top the sales chart irrespective of the genre. The stores should purchase more of these.</p>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;IronMaiden , U2 and metallic top the sales chart irrespective of the genre. The stores should purchase more of these.&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Who-is-the-best-performing-employee?">Who is the best performing employee?<a class="anchor-link" href="#Who-is-the-best-performing-employee?">&#182;</a></h2><p>Looking at the data the relevent columns for these analysis seem to be -</p>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Who-is-the-best-performing-employee?"&gt;Who is the best performing employee?&lt;a class="anchor-link" href="#Who-is-the-best-performing-employee?"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Looking at the data the relevent columns for these analysis seem to be -&lt;/p&gt;
 
-<pre><code>* Employee hire date - employees staying longer in the service should have sold more records. For the purpose of analysis, we will see the avg records sold per year given by - Total quantity sold/total years of service</code></pre>
+&lt;pre&gt;&lt;code&gt;* Employee hire date - employees staying longer in the service should have sold more records. For the purpose of analysis, we will see the avg records sold per year given by - Total quantity sold/total years of service&lt;/code&gt;&lt;/pre&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[108]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q6</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">    SELECT </span>
-<span class="s1">        a.firstname || &#39; &#39;||a.lastname employee_name</span>
-<span class="s1">        , a.hiredate hiredate</span>
-<span class="s1">        , DATE(&#39;now&#39;) - a.hiredate service_years</span>
-<span class="s1">        , SUM(c.total)  total</span>
-<span class="s1">        , SUM(c.total)/ (DATE(&#39;now&#39;) - a.hiredate) sales_per_year</span>
-<span class="s1">    FROM employee a</span>
-<span class="s1">    LEFT JOIN customer b</span>
-<span class="s1">        ON a.employeeid = b. supportrepid</span>
-<span class="s1">    LEFT JOIN invoice c</span>
-<span class="s1">        ON b.customerid = c.customerid</span>
-<span class="s1">    GROUP BY a.firstname || &#39; &#39;||a.lastname , a.hiredate</span>
-<span class="s1">    ORDER BY SUM(c.total) DESC</span>
-<span class="s1">&#39;&#39;&#39;</span>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[108]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;q6&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;    SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;        a.firstname || &amp;#39; &amp;#39;||a.lastname employee_name&lt;/span&gt;
+&lt;span class="s1"&gt;        , a.hiredate hiredate&lt;/span&gt;
+&lt;span class="s1"&gt;        , DATE(&amp;#39;now&amp;#39;) - a.hiredate service_years&lt;/span&gt;
+&lt;span class="s1"&gt;        , SUM(c.total)  total&lt;/span&gt;
+&lt;span class="s1"&gt;        , SUM(c.total)/ (DATE(&amp;#39;now&amp;#39;) - a.hiredate) sales_per_year&lt;/span&gt;
+&lt;span class="s1"&gt;    FROM employee a&lt;/span&gt;
+&lt;span class="s1"&gt;    LEFT JOIN customer b&lt;/span&gt;
+&lt;span class="s1"&gt;        ON a.employeeid = b. supportrepid&lt;/span&gt;
+&lt;span class="s1"&gt;    LEFT JOIN invoice c&lt;/span&gt;
+&lt;span class="s1"&gt;        ON b.customerid = c.customerid&lt;/span&gt;
+&lt;span class="s1"&gt;    GROUP BY a.firstname || &amp;#39; &amp;#39;||a.lastname , a.hiredate&lt;/span&gt;
+&lt;span class="s1"&gt;    ORDER BY SUM(c.total) DESC&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
 
-<span class="n">run_query</span><span class="p">(</span><span class="n">q6</span><span class="p">)</span>
-</pre></div>
+&lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q6&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[108]:</div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[108]:&lt;/div&gt;
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3180,155 +3150,155 @@ Now lets us go ahead and see which artist sells the most tracks independent of g
     .dataframe thead th {
         text-align: right;
     }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>employee_name</th>
-      <th>hiredate</th>
-      <th>service_years</th>
-      <th>total</th>
-      <th>sales_per_year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Jane Peacock</td>
-      <td>2002-04-01 00:00:00</td>
-      <td>17</td>
-      <td>833.04</td>
-      <td>49.002353</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Margaret Park</td>
-      <td>2003-05-03 00:00:00</td>
-      <td>16</td>
-      <td>775.40</td>
-      <td>48.462500</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Steve Johnson</td>
-      <td>2003-10-17 00:00:00</td>
-      <td>16</td>
-      <td>720.16</td>
-      <td>45.010000</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Andrew Adams</td>
-      <td>2002-08-14 00:00:00</td>
-      <td>17</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Laura Callahan</td>
-      <td>2004-03-04 00:00:00</td>
-      <td>15</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Michael Mitchell</td>
-      <td>2003-10-17 00:00:00</td>
-      <td>16</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Nancy Edwards</td>
-      <td>2002-05-01 00:00:00</td>
-      <td>17</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Robert King</td>
-      <td>2004-01-02 00:00:00</td>
-      <td>15</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;employee_name&lt;/th&gt;
+      &lt;th&gt;hiredate&lt;/th&gt;
+      &lt;th&gt;service_years&lt;/th&gt;
+      &lt;th&gt;total&lt;/th&gt;
+      &lt;th&gt;sales_per_year&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;Jane Peacock&lt;/td&gt;
+      &lt;td&gt;2002-04-01 00:00:00&lt;/td&gt;
+      &lt;td&gt;17&lt;/td&gt;
+      &lt;td&gt;833.04&lt;/td&gt;
+      &lt;td&gt;49.002353&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;Margaret Park&lt;/td&gt;
+      &lt;td&gt;2003-05-03 00:00:00&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;775.40&lt;/td&gt;
+      &lt;td&gt;48.462500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;Steve Johnson&lt;/td&gt;
+      &lt;td&gt;2003-10-17 00:00:00&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;720.16&lt;/td&gt;
+      &lt;td&gt;45.010000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;Andrew Adams&lt;/td&gt;
+      &lt;td&gt;2002-08-14 00:00:00&lt;/td&gt;
+      &lt;td&gt;17&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;Laura Callahan&lt;/td&gt;
+      &lt;td&gt;2004-03-04 00:00:00&lt;/td&gt;
+      &lt;td&gt;15&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;5&lt;/th&gt;
+      &lt;td&gt;Michael Mitchell&lt;/td&gt;
+      &lt;td&gt;2003-10-17 00:00:00&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;6&lt;/th&gt;
+      &lt;td&gt;Nancy Edwards&lt;/td&gt;
+      &lt;td&gt;2002-05-01 00:00:00&lt;/td&gt;
+      &lt;td&gt;17&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;7&lt;/th&gt;
+      &lt;td&gt;Robert King&lt;/td&gt;
+      &lt;td&gt;2004-01-02 00:00:00&lt;/td&gt;
+      &lt;td&gt;15&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Most of the employee have service in the rage of 15-17 years. Only 3 employees seems to be in the front line and Jane is the top performing amongst them with an average of $49 sales per year.</p>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Most of the employee have service in the rage of 15-17 years. Only 3 employees seems to be in the front line and Jane is the top performing amongst them with an average of $49 sales per year.&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-can-we-find-out-from-the-sales-data?">What can we find out from the sales data?<a class="anchor-link" href="#What-can-we-find-out-from-the-sales-data?">&#182;</a></h2><p>For this we will try to find out following information per country</p>
-<ul>
-<li>total number of customers</li>
-<li>total value of sales</li>
-<li>average value of sales per customer</li>
-<li>average order value</li>
-</ul>
-<p>There are many countries where there is a simgle customer. For the purposes of the analysis, we will group them in 'Other'</p>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="What-can-we-find-out-from-the-sales-data?"&gt;What can we find out from the sales data?&lt;a class="anchor-link" href="#What-can-we-find-out-from-the-sales-data?"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;For this we will try to find out following information per country&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;total number of customers&lt;/li&gt;
+&lt;li&gt;total value of sales&lt;/li&gt;
+&lt;li&gt;average value of sales per customer&lt;/li&gt;
+&lt;li&gt;average order value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are many countries where there is a simgle customer. For the purposes of the analysis, we will group them in 'Other'&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[140]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># checking for duplicate id per customer</span>
-<span class="n">q7</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">    select</span>
-<span class="s1">            firstname ||&#39; &#39;|| lastname </span>
-<span class="s1">            ,COUNT(customerid)</span>
-<span class="s1">        FROM customer</span>
-<span class="s1">        GROUP BY firstname ||&#39; &#39;|| lastname </span>
-<span class="s1">        HAVING COUNT(customerid) &gt; 1</span>
-<span class="s1">    </span>
-<span class="s1">    &#39;&#39;&#39;</span>
-<span class="n">run_query</span><span class="p">(</span><span class="n">q7</span><span class="p">)</span>
-<span class="c1"># none noted</span>
-</pre></div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[140]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# checking for duplicate id per customer&lt;/span&gt;
+&lt;span class="n"&gt;q7&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;    select&lt;/span&gt;
+&lt;span class="s1"&gt;            firstname ||&amp;#39; &amp;#39;|| lastname &lt;/span&gt;
+&lt;span class="s1"&gt;            ,COUNT(customerid)&lt;/span&gt;
+&lt;span class="s1"&gt;        FROM customer&lt;/span&gt;
+&lt;span class="s1"&gt;        GROUP BY firstname ||&amp;#39; &amp;#39;|| lastname &lt;/span&gt;
+&lt;span class="s1"&gt;        HAVING COUNT(customerid) &amp;gt; 1&lt;/span&gt;
+&lt;span class="s1"&gt;    &lt;/span&gt;
+&lt;span class="s1"&gt;    &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q7&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# none noted&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[140]:</div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[140]:&lt;/div&gt;
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3340,70 +3310,70 @@ Now lets us go ahead and see which artist sells the most tracks independent of g
     .dataframe thead th {
         text-align: right;
     }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>firstname ||' '|| lastname</th>
-      <th>COUNT(customerid)</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-</div>
-</div>
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;firstname ||' '|| lastname&lt;/th&gt;
+      &lt;th&gt;COUNT(customerid)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[241]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q8</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[241]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;q8&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
 
-<span class="s1">    SELECT </span>
-<span class="s1">         CASE </span>
-<span class="s1">             WHEN COUNT(distinct a.customerid)  = 1 THEN &#39;Other&#39;</span>
-<span class="s1">             ELSE a.country</span>
-<span class="s1">          END  Country</span>
-<span class="s1">        , COUNT(distinct a.customerid) total_customer</span>
-<span class="s1">        , SUM(b.total) total_sales_per_country</span>
-<span class="s1"> --       , COUNT(b.invoiceid) number_of_order</span>
-<span class="s1">        , SUM(b.total)/ COUNT(distinct a.customerid) avg_sales_per_customer</span>
-<span class="s1">        , SUM(b.total)/COUNT(b.invoiceid) avg_order_value</span>
-<span class="s1">    FROM customer a</span>
-<span class="s1">    LEFT JOIN invoice b</span>
-<span class="s1">        ON a.customerid = b.customerid  </span>
-<span class="s1">    GROUP BY a.country</span>
-<span class="s1">    ORDER BY SUM(b.total) DESC</span>
+&lt;span class="s1"&gt;    SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;         CASE &lt;/span&gt;
+&lt;span class="s1"&gt;             WHEN COUNT(distinct a.customerid)  = 1 THEN &amp;#39;Other&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;             ELSE a.country&lt;/span&gt;
+&lt;span class="s1"&gt;          END  Country&lt;/span&gt;
+&lt;span class="s1"&gt;        , COUNT(distinct a.customerid) total_customer&lt;/span&gt;
+&lt;span class="s1"&gt;        , SUM(b.total) total_sales_per_country&lt;/span&gt;
+&lt;span class="s1"&gt; --       , COUNT(b.invoiceid) number_of_order&lt;/span&gt;
+&lt;span class="s1"&gt;        , SUM(b.total)/ COUNT(distinct a.customerid) avg_sales_per_customer&lt;/span&gt;
+&lt;span class="s1"&gt;        , SUM(b.total)/COUNT(b.invoiceid) avg_order_value&lt;/span&gt;
+&lt;span class="s1"&gt;    FROM customer a&lt;/span&gt;
+&lt;span class="s1"&gt;    LEFT JOIN invoice b&lt;/span&gt;
+&lt;span class="s1"&gt;        ON a.customerid = b.customerid  &lt;/span&gt;
+&lt;span class="s1"&gt;    GROUP BY a.country&lt;/span&gt;
+&lt;span class="s1"&gt;    ORDER BY SUM(b.total) DESC&lt;/span&gt;
 
-<span class="s1">&#39;&#39;&#39;</span>
-<span class="n">country_sales</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">q8</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
-<span class="n">country_sales</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
+&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;country_sales&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q8&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;country_sales&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[241]:</div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[241]:&lt;/div&gt;
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3415,118 +3385,118 @@ Now lets us go ahead and see which artist sells the most tracks independent of g
     .dataframe thead th {
         text-align: right;
     }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>total_customer</th>
-      <th>total_sales_per_country</th>
-      <th>avg_sales_per_customer</th>
-      <th>avg_order_value</th>
-    </tr>
-    <tr>
-      <th>Country</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>USA</th>
-      <td>13</td>
-      <td>523.06</td>
-      <td>40.235385</td>
-      <td>5.747912</td>
-    </tr>
-    <tr>
-      <th>Canada</th>
-      <td>8</td>
-      <td>303.96</td>
-      <td>37.995000</td>
-      <td>5.427857</td>
-    </tr>
-    <tr>
-      <th>France</th>
-      <td>5</td>
-      <td>195.10</td>
-      <td>39.020000</td>
-      <td>5.574286</td>
-    </tr>
-    <tr>
-      <th>Brazil</th>
-      <td>5</td>
-      <td>190.10</td>
-      <td>38.020000</td>
-      <td>5.431429</td>
-    </tr>
-    <tr>
-      <th>Germany</th>
-      <td>4</td>
-      <td>156.48</td>
-      <td>39.120000</td>
-      <td>5.588571</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;total_customer&lt;/th&gt;
+      &lt;th&gt;total_sales_per_country&lt;/th&gt;
+      &lt;th&gt;avg_sales_per_customer&lt;/th&gt;
+      &lt;th&gt;avg_order_value&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;USA&lt;/th&gt;
+      &lt;td&gt;13&lt;/td&gt;
+      &lt;td&gt;523.06&lt;/td&gt;
+      &lt;td&gt;40.235385&lt;/td&gt;
+      &lt;td&gt;5.747912&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Canada&lt;/th&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;303.96&lt;/td&gt;
+      &lt;td&gt;37.995000&lt;/td&gt;
+      &lt;td&gt;5.427857&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;France&lt;/th&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;195.10&lt;/td&gt;
+      &lt;td&gt;39.020000&lt;/td&gt;
+      &lt;td&gt;5.574286&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Brazil&lt;/th&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;190.10&lt;/td&gt;
+      &lt;td&gt;38.020000&lt;/td&gt;
+      &lt;td&gt;5.431429&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Germany&lt;/th&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;156.48&lt;/td&gt;
+      &lt;td&gt;39.120000&lt;/td&gt;
+      &lt;td&gt;5.588571&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Generally in sales the average order value per customer is higher, it reduces the customer aquisition cost. 
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Generally in sales the average order value per customer is higher, it reduces the customer aquisition cost. 
 Let us look at the country where it would be more profitable to acquire the customers.
-For this analysis, we will look at the countries that have more than 1 customer.</p>
+For this analysis, we will look at the countries that have more than 1 customer.&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Just selecting the major countries </span>
-<span class="n">major_countries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;USA&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">,</span> <span class="s1">&#39;France&#39;</span><span class="p">,</span> <span class="s1">&#39;Brazil&#39;</span><span class="p">,</span> <span class="s1">&#39;Germany&#39;</span><span class="p">,</span> <span class="s1">&#39;United Kingdom&#39;</span><span class="p">,</span> <span class="s1">&#39;Czech Republic&#39;</span><span class="p">,</span> <span class="s1">&#39;Portugal&#39;</span><span class="p">,</span> <span class="s1">&#39;India&#39;</span><span class="p">]</span>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[240]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#Just selecting the major countries &lt;/span&gt;
+&lt;span class="n"&gt;major_countries&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;USA&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Canada&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;France&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Brazil&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Germany&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;United Kingdom&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Czech Republic&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Portugal&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;India&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
-<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">country_sales</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">major_countries</span><span class="p">][[</span><span class="s1">&#39;avg_sales_per_customer&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_order_value&#39;</span><span class="p">]])</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">((</span><span class="s1">&#39;avg_sales_per_customer&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_order_value&#39;</span><span class="p">),</span> <span class="n">loc</span> <span class="o">=</span> <span class="s1">&#39;best&#39;</span><span class="p">)</span>
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;style&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;fivethirtyeight&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;figsize&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_subplot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;country_sales&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;major_countries&lt;/span&gt;&lt;span class="p"&gt;][[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;avg_sales_per_customer&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;avg_order_value&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]])&lt;/span&gt;
+&lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;legend&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;avg_sales_per_customer&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;avg_order_value&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;loc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;best&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-<span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">spine</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="n">spine</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span> <span class="o">=</span> <span class="mi">60</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spine&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;spines&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;spine&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_visible&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xticks&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;rotation&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
+&lt;div class="output_area"&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
 
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdoAAAISCAYAAABrtw7rAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+
+
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdoAAAISCAYAAABrtw7rAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4zLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvnQurowAAIABJREFUeJzs3XlcVOXiP/DPwMww7AMjjoCICSji
 LqVpqbikl3Arcymrm5XeqG5qN/OS3Uqz0ExvXhe+ppmWViryu6ktlguKiktuqKgXV1wQZGDYh23O
@@ -4218,103 +4188,103 @@ NWvWYDKZ0Gq1/PXXX9jb2zN8+HBeeeUVCVkhzkGCVghxwY4ePUpWVhZHjhyhurqaqKgoAgMDsbOz
 k2eaQpyDBK0QQgjRhmScRwghhGhDErRCCCFEG5KgFUIIIdqQBK0QQgjRhiRohRBCiDYkQSuEEEK0
 IQlaIYQQog1J0AohhBBtSIJWCCGEaEP/BZ2do4k9c4i5AAAAAElFTkSuQmCC
 "
->
-</div>
+&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The average order value and the average sales per customer both are higher in United Kingdom. The store should put more investment in UK market to aquire more customers as the ROI is higher.</p>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The average order value and the average sales per customer both are higher in United Kingdom. The store should put more investment in UK market to aquire more customers as the ROI is higher.&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Should-the-store-buy-all-the-tracks-from-the-an-album-or-buy-the-tracks-individually?">Should the store buy all the tracks from the an album or buy the tracks individually?<a class="anchor-link" href="#Should-the-store-buy-all-the-tracks-from-the-an-album-or-buy-the-tracks-individually?">&#182;</a></h2><p>Let us look at the percentage invoices which contain all the tracks from a single album</p>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Should-the-store-buy-all-the-tracks-from-the-an-album-or-buy-the-tracks-individually?"&gt;Should the store buy all the tracks from the an album or buy the tracks individually?&lt;a class="anchor-link" href="#Should-the-store-buy-all-the-tracks-from-the-an-album-or-buy-the-tracks-individually?"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Let us look at the percentage invoices which contain all the tracks from a single album&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[329]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q9</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[329]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;q9&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
 
-<span class="s1">--Select all the tracks in the album</span>
-<span class="s1">WITH album_track AS(</span>
-<span class="s1">    SELECT </span>
-<span class="s1">         albumid </span>
-<span class="s1">        ,COUNT(trackid) as total_album_track</span>
-<span class="s1">    FROM Track</span>
-<span class="s1">    GROUP BY albumid</span>
-<span class="s1">    )</span>
+&lt;span class="s1"&gt;--Select all the tracks in the album&lt;/span&gt;
+&lt;span class="s1"&gt;WITH album_track AS(&lt;/span&gt;
+&lt;span class="s1"&gt;    SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;         albumid &lt;/span&gt;
+&lt;span class="s1"&gt;        ,COUNT(trackid) as total_album_track&lt;/span&gt;
+&lt;span class="s1"&gt;    FROM Track&lt;/span&gt;
+&lt;span class="s1"&gt;    GROUP BY albumid&lt;/span&gt;
+&lt;span class="s1"&gt;    )&lt;/span&gt;
 
-<span class="s1">--select all the albumbs with track count in an invoice</span>
-<span class="s1"> , invoice_track AS(</span>
-<span class="s1">    SELECT </span>
-<span class="s1">         a.invoiceid</span>
-<span class="s1">        ,b.albumid</span>
-<span class="s1">        ,count(a.trackid) total_track_per_album_per_purchase</span>
-<span class="s1">    FROM invoiceline a</span>
-<span class="s1">    LEFT JOIN track b</span>
-<span class="s1">        ON a.trackid = b.trackid</span>
-<span class="s1">    GROUP BY a.invoiceid , b.albumid</span>
-<span class="s1">    )</span>
-<span class="s1">    </span>
-<span class="s1">    </span>
-<span class="s1">--select only the invoices where full purchases are present </span>
-<span class="s1">SELECT </span>
-<span class="s1">      COUNT(*)  total_orders</span>
-<span class="s1">    , SUM(full_album_purchase)   full_album_orders</span>
-<span class="s1">    , SUM(full_album_purchase)/COUNT(*)*100  percentage_full_album_purchase</span>
-<span class="s1">FROM (</span>
-<span class="s1">     SELECT</span>
-<span class="s1">            invoiceid</span>
-<span class="s1">            , CASE </span>
-<span class="s1">                WHEN a.total_track_per_album_per_purchase = b.total_album_track </span>
-<span class="s1">                    THEN 1</span>
-<span class="s1">                ELSE 0</span>
-<span class="s1">             END full_album_purchase</span>
-<span class="s1">        FROM invoice_track a</span>
-<span class="s1">        LEFT JOIN album_track b </span>
-<span class="s1">            ON a.albumid = b.albumid</span>
-<span class="s1">        GROUP BY invoiceid</span>
-<span class="s1">        ) A</span>
+&lt;span class="s1"&gt;--select all the albumbs with track count in an invoice&lt;/span&gt;
+&lt;span class="s1"&gt; , invoice_track AS(&lt;/span&gt;
+&lt;span class="s1"&gt;    SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;         a.invoiceid&lt;/span&gt;
+&lt;span class="s1"&gt;        ,b.albumid&lt;/span&gt;
+&lt;span class="s1"&gt;        ,count(a.trackid) total_track_per_album_per_purchase&lt;/span&gt;
+&lt;span class="s1"&gt;    FROM invoiceline a&lt;/span&gt;
+&lt;span class="s1"&gt;    LEFT JOIN track b&lt;/span&gt;
+&lt;span class="s1"&gt;        ON a.trackid = b.trackid&lt;/span&gt;
+&lt;span class="s1"&gt;    GROUP BY a.invoiceid , b.albumid&lt;/span&gt;
+&lt;span class="s1"&gt;    )&lt;/span&gt;
+&lt;span class="s1"&gt;    &lt;/span&gt;
+&lt;span class="s1"&gt;    &lt;/span&gt;
+&lt;span class="s1"&gt;--select only the invoices where full purchases are present &lt;/span&gt;
+&lt;span class="s1"&gt;SELECT &lt;/span&gt;
+&lt;span class="s1"&gt;      COUNT(*)  total_orders&lt;/span&gt;
+&lt;span class="s1"&gt;    , SUM(full_album_purchase)   full_album_orders&lt;/span&gt;
+&lt;span class="s1"&gt;    , SUM(full_album_purchase)/COUNT(*)*100  percentage_full_album_purchase&lt;/span&gt;
+&lt;span class="s1"&gt;FROM (&lt;/span&gt;
+&lt;span class="s1"&gt;     SELECT&lt;/span&gt;
+&lt;span class="s1"&gt;            invoiceid&lt;/span&gt;
+&lt;span class="s1"&gt;            , CASE &lt;/span&gt;
+&lt;span class="s1"&gt;                WHEN a.total_track_per_album_per_purchase = b.total_album_track &lt;/span&gt;
+&lt;span class="s1"&gt;                    THEN 1&lt;/span&gt;
+&lt;span class="s1"&gt;                ELSE 0&lt;/span&gt;
+&lt;span class="s1"&gt;             END full_album_purchase&lt;/span&gt;
+&lt;span class="s1"&gt;        FROM invoice_track a&lt;/span&gt;
+&lt;span class="s1"&gt;        LEFT JOIN album_track b &lt;/span&gt;
+&lt;span class="s1"&gt;            ON a.albumid = b.albumid&lt;/span&gt;
+&lt;span class="s1"&gt;        GROUP BY invoiceid&lt;/span&gt;
+&lt;span class="s1"&gt;        ) A&lt;/span&gt;
 
-<span class="s1">&#39;&#39;&#39;</span>
+&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
 
-<span class="n">run_query</span><span class="p">(</span><span class="n">q9</span><span class="p">)</span>
-</pre></div>
+&lt;span class="n"&gt;run_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q9&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[329]:</div>
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[329]:&lt;/div&gt;
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -4326,61 +4296,61 @@ IQlaIYQQog1J0AohhBBtSIJWCCGEaEP/BZ2do4k9c4i5AAAAAElFTkSuQmCC
     .dataframe thead th {
         text-align: right;
     }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>total_orders</th>
-      <th>full_album_orders</th>
-      <th>percentage_full_album_purchase</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>412</td>
-      <td>8</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;total_orders&lt;/th&gt;
+      &lt;th&gt;full_album_orders&lt;/th&gt;
+      &lt;th&gt;percentage_full_album_purchase&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;412&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We found that only 8 out of 412 orders had full album purchase. It means that chinook store should to purchase popular tracks rather than full albums.</p>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;We found that only 8 out of 412 orders had full album purchase. It means that chinook store should to purchase popular tracks rather than full albums.&lt;/p&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
  
 
 
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
@@ -4407,65 +4377,5 @@ IQlaIYQQog1J0AohhBBtSIJWCCGEaEP/BZ2do4k9c4i5AAAAAElFTkSuQmCC
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-</script>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/first-post.html" rel="bookmark"
-                           title="Permalink to First Post">First Post</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-06-08T20:00:00-04:00">
-                Published: Wed 08 June 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/me.html">me</a>
-        </address>
-<p>In <a href="/category/posts.html">posts</a>.</p>
-<p>tags: <a href="/tag/python.html">python</a> </p>
-</footer><!-- /.post-info -->                <p>My first post, read it to find out.</p>
-                <a class="readmore" href="/first-post.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-</body>
-</html>
+&lt;/script&gt;
+</content><category term="python Sqlite3"></category></entry></feed>
