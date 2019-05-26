@@ -1010,10 +1010,10 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Music-store-data-analysis">Music store data analysis<a class="anchor-link" href="#Music-store-data-analysis">&#182;</a></h1><p>In this project we will use Chinook DB to to analyse some questions. chinook DB can be found here in github - 
+<h1 id="Music-store-data-analysis">Music store data analysis<a class="anchor-link" href="#Music-store-data-analysis">&#182;</a></h1><p>In this project we will use Chinook database to to analyze some questions. Chinook database can be found here in github - 
 <a href="https://github.com/lerocha/chinook-database">https://github.com/lerocha/chinook-database</a></p>
-<p>The projects uses sqlite and pandas dataframe. The integration with SQLite makes it easier to excute select, filter and sort commands in the Db, while plotting the data and groupby are more convienient in pandas.</p>
-<p>We will explore a series of business questions and analyse the data to find answers.|</p>
+<p>The project uses sqlite and pandas dataframe. The integration with SQLite makes it easier to select, filter and sort the data, while pandas makes groupby and plotting easier.</p>
+<p>We will explore a series of business questions and analyze the data to find the answers.</p>
 
 </div>
 </div>
@@ -1040,11 +1040,12 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Establish-connection-to-the-database-and-create-basic-functions">Establish connection to the database and create basic functions<a class="anchor-link" href="#Establish-connection-to-the-database-and-create-basic-functions">&#182;</a></h2>
-<pre><code>1) We will use sqlite inbuilt context manager to establish connection to the database, 
-    so that we do not overwrite on the any of the tables.
-2) we will write a functions that is used to run queries that return non table objects like views
-3) we will write a funciton that gives us a list of all table and view in the DB</code></pre>
+<h2 id="Establish-connection-to-the-database-and-create-basic-functions">Establish connection to the database and create basic functions<a class="anchor-link" href="#Establish-connection-to-the-database-and-create-basic-functions">&#182;</a></h2><p>let us follow the steps below -</p>
+<ul>
+<li>Use the sqlite inbuilt context manager to establish connection to the database, and to prevent overwriting any table    in the database.</li>
+<li>Write a function that is used to run queries that return non table objects like views</li>
+<li>Write a function that gives us a list of all tables and views in the database.</li>
+</ul>
 
 </div>
 </div>
@@ -3012,8 +3013,7 @@ REREJHIsdEREREQix0JHREREJHIsdEREREQix0JHREREJHIsdEREREQix0JHREREJHIsdEREREQi
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The tracks of iron maiden, U2 and metallica are top selling in the top 4 genre.
-Now lets us go ahead and see which artist sells the most tracks independent of genre.</p>
+<p>The tracks of iron maiden, U2 and Metallica are top selling in the top 4 genres. Now lets us go ahead and see which artist sells the most tracks independent of genre.</p>
 
 </div>
 </div>
@@ -3117,7 +3117,7 @@ Now lets us go ahead and see which artist sells the most tracks independent of g
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>IronMaiden , U2 and metallic top the sales chart irrespective of the genre. The stores should purchase more of these.</p>
+<p>Iron Maiden, U2 and metallic top the sales chart irrespective of the genre. The stores should purchase more of these.</p>
 
 </div>
 </div>
@@ -3127,9 +3127,11 @@ Now lets us go ahead and see which artist sells the most tracks independent of g
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Who-is-the-best-performing-employee?">Who is the best performing employee?<a class="anchor-link" href="#Who-is-the-best-performing-employee?">&#182;</a></h2><p>Looking at the data the relevent columns for these analysis seem to be -</p>
-
-<pre><code>* Employee hire date - employees staying longer in the service should have sold more records. For the purpose of analysis, we will see the avg records sold per year given by - Total quantity sold/total years of service</code></pre>
+<h2 id="Who-is-the-best-performing-employee?">Who is the best performing employee?<a class="anchor-link" href="#Who-is-the-best-performing-employee?">&#182;</a></h2><p>Looking at the data the relevant columns for these analyses seem to be-</p>
+<ul>
+<li>Employee hire date - employees staying longer in the service should have sold more records.
+For the purpose of analysis, we will see the average records sold per year given by - total quantity sold/total years of service.</li>
+</ul>
 
 </div>
 </div>
@@ -3277,7 +3279,7 @@ Now lets us go ahead and see which artist sells the most tracks independent of g
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Most of the employee have service in the rage of 15-17 years. Only 3 employees seems to be in the front line and Jane is the top performing amongst them with an average of $49 sales per year.</p>
+<p>Most of the employees have service in the range of 15-17 years. Only 3 employees seems to be in the front line and Jane is the top performing amongst them with an average of $49 sales per year.</p>
 
 </div>
 </div>
@@ -3287,14 +3289,14 @@ Now lets us go ahead and see which artist sells the most tracks independent of g
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-can-we-find-out-from-the-sales-data?">What can we find out from the sales data?<a class="anchor-link" href="#What-can-we-find-out-from-the-sales-data?">&#182;</a></h2><p>For this we will try to find out following information per country</p>
+<h2 id="What-can-we-find-out-from-the-sales-data?">What can we find out from the sales data?<a class="anchor-link" href="#What-can-we-find-out-from-the-sales-data?">&#182;</a></h2><p>In this we will find out following information per country</p>
 <ul>
 <li>total number of customers</li>
 <li>total value of sales</li>
 <li>average value of sales per customer</li>
 <li>average order value</li>
 </ul>
-<p>There are many countries where there is a simgle customer. For the purposes of the analysis, we will group them in 'Other'</p>
+<p>There are many countries where there is a single customer. For the purposes of the analysis, we will group them in 'Other'</p>
 
 </div>
 </div>
@@ -4236,7 +4238,7 @@ IQlaIYQQog1J0AohhBBtSIJWCCGEaEP/BZ2do4k9c4i5AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The average order value and the average sales per customer both are higher in United Kingdom. The store should put more investment in UK market to aquire more customers as the ROI is higher.</p>
+<p>The average order value and the average sales per customer both are higher in the United Kingdom. The store should put more investment in  this market to acquire more customers as the ROI is higher.</p>
 
 </div>
 </div>
