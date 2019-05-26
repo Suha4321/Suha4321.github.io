@@ -976,7 +976,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="If-you-are-a-music-store-manager"&gt;If you are a music store manager&lt;a class="anchor-link" href="#If-you-are-a-music-store-manager"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;In this project we will use Chinook DB to to analyse some questions. chinook DB can be found here in github - 
+&lt;h1 id="Music-store-data-analysis"&gt;Music store data analysis&lt;a class="anchor-link" href="#Music-store-data-analysis"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;In this project we will use Chinook DB to to analyse some questions. chinook DB can be found here in github - 
 &lt;a href="https://github.com/lerocha/chinook-database"&gt;https://github.com/lerocha/chinook-database&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The projects uses sqlite and pandas dataframe. The integration with SQLite makes it easier to excute select, filter and sort commands in the Db, while plotting the data and groupby are more convienient in pandas.&lt;/p&gt;
 &lt;p&gt;We will explore a series of business questions and analyse the data to find answers.|&lt;/p&gt;
