@@ -985,7 +985,7 @@ h6:hover .anchor-link {
 &lt;li&gt;person_codes.csv&lt;/li&gt;
 &lt;li&gt;team_codes.csv&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The data dictionaru for the events can be found here - &lt;a href="http://www.retrosheet.org/eventfile.htm"&gt;http://www.retrosheet.org/eventfile.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The data dictionary for the events can be found here - &lt;a href="http://www.retrosheet.org/eventfile.htm"&gt;http://www.retrosheet.org/eventfile.htm&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2105,7 +2105,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The park_id in the game_log corresponds to the baseball park the match was played in .  it is same as the park_id in the park_codes reference data set&lt;/p&gt;
+&lt;p&gt;The park_id in the game_log corresponds to the baseball park the match was played in, is the same as the park_id in the park_codes reference data set.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2342,7 +2342,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;the person_id in the person_code reference data corresponds to the 'XX_id' in the game_logs. They are the ids associated with the manager, player coach and umpire names. The teamids are associated wiht h_name and v_name in the game log. The team table provides more information about a team, the league and the corresponding franchise Id.&lt;/p&gt;
+&lt;p&gt;the person_id in the person_code reference data corresponds to the 'XX_id' in the game_logs. They are the ids associated with the manager, player coach and umpire names. The teamids are associated with h_name and v_name in the game log. The team table provides more information about a team, the league and the corresponding franchise Id.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2361,7 +2361,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;for the game_log We have data from 1871 - 2016.&lt;/p&gt;
+&lt;p&gt;For the game_log We have data from 1871 - 2016.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3472,10 +3472,10 @@ Name: date, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;game_log seem to have information about&lt;/p&gt;
+&lt;p&gt;game_log seems to have -&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;general information on the game&lt;/li&gt;
-&lt;li&gt;the information on the winning teaam and losing team&lt;/li&gt;
+&lt;li&gt;the information on the winning team and losing team&lt;/li&gt;
 &lt;li&gt;player's position and the names along with umpiers for the position&lt;/li&gt;
 &lt;li&gt;statistics on hosting and visiting team&lt;/li&gt;
 &lt;/ul&gt;
@@ -4939,33 +4939,25 @@ We will try to create this Id while storing the table in DB.
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[251]:&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#Create the appearence type table &lt;/span&gt;
-&lt;span class="n"&gt;q13&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;span class="s1"&gt;    CREATE TABLE IF NOT EXISTS appearence_type(&lt;/span&gt;
-&lt;span class="s1"&gt;        appearance_type_id&lt;/span&gt;
-&lt;span class="s1"&gt;    &lt;/span&gt;
-&lt;span class="s1"&gt;    &lt;/span&gt;
-&lt;span class="s1"&gt;    )&lt;/span&gt;
-
-&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;We can go ahead and create the rest of the data base in such manner&lt;/p&gt;
+&lt;p&gt;The information used here was obtained free of
+charge from and is copyrighted by Retrosheet.  Interested
+parties may contact Retrosheet at "www.retrosheet.org".&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# We can go ahead and crea&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
