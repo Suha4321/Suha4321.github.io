@@ -3967,27 +3967,43 @@ Let us also go ahead and look at frach_id and how it ties back to the teams&lt;/
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;There are multiple defensive position numbers in data set. Let us find out what do they mean - 
-According to https://en.wikipedia.org/wiki/Baseball_positions we have the following positions -  
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;There are multiple defensive position numbers in data set. Let us find out what do they mean - 
+According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;https://en.wikipedia.org/wiki/Baseball_positions&lt;/a&gt; we have the following positions -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;P0itcher&lt;/li&gt;
+&lt;li&gt;Catcher&lt;/li&gt;
+&lt;li&gt;First baseman&lt;/li&gt;
+&lt;li&gt;Second baseman&lt;/li&gt;
+&lt;li&gt;Third baseman&lt;/li&gt;
+&lt;li&gt;Shortstop&lt;/li&gt;
+&lt;li&gt;Left fielder&lt;/li&gt;
+&lt;li&gt;Center fielder&lt;/li&gt;
+&lt;li&gt;Right fielders&lt;/li&gt;
+&lt;/ul&gt;
 
-* 1 (pitcher)
-* 2 (catcher)
-* 3 (first baseman)
-* 4 (second baseman)*
-* 5 (third baseman)
-* 6 (shortstop)
-* 7 (left fielder)
-* 8 (center fielder)
-* 9 (right fielders)
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;he database, we need a primary key for each column. Retosheet talks about the unique ids in here - 
+&lt;a href="https://www.retrosheet.org/eventfile.htm"&gt;https://www.retrosheet.org/eventfile.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;They define Ids as -&lt;/p&gt;
+&lt;p&gt;Each game begins with a twelve character ID record which identifies the date, home team, and number of the game. For example, ATL198304080 should be read as follows. The first three characters identify the home team (the Braves). The next four are the year (1983). The next two are the month (April) using the standard numeric notation, 04, followed by the day (08). The last digit indicates if this is a single game (0), first game (1) or second game (2) if more than one game is played during a day, usually a double header The id record starts the description of a game thus ending the description of the preceding game in the file.&lt;/p&gt;
+&lt;p&gt;We will try to create this Id while storing the table in DB.&lt;/p&gt;
 
-To insert the data in the database, we need a primary key for each column. Retosheet talks about the unique ids in here - 
-https://www.retrosheet.org/eventfile.htm
-
-They define Ids as - 
-Each game begins with a twelve character ID record which identifies the date, home team, and number of the game. For example, ATL198304080 should be read as follows. The first three characters identify the home team (the Braves). The next four are the year (1983). The next two are the month (April) using the standard numeric notation, 04, followed by the day (08). The last digit indicates if this is a single game (0), first game (1) or second game (2) if more than one game is played during a day, usually a double header The id record starts the description of a game thus ending the description of the preceding game in the file.
-
-We will try to create this Id while storing the table in DB.
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
