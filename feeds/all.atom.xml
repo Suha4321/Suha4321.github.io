@@ -4576,12 +4576,12 @@ Each game begins with a twelve character ID record which identifies the date, ho
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="k"&gt;html&lt;/span&gt;
 
-&amp;lt;img src=&amp;quot;img/schema-screenshot.png&amp;quot; , width = 30 , height = 40&amp;gt;
+&amp;lt;img src=&amp;quot;img/schema-screenshot.png&amp;quot; , width = 500 , height = 500&amp;gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
@@ -4598,7 +4598,7 @@ Each game begins with a twelve character ID record which identifies the date, ho
 
 &lt;div class="output_html rendered_html output_subarea "&gt;
 
-&lt;img src="img/schema-screenshot.png" , width = 30 , height = 40&gt;
+&lt;img src="img/schema-screenshot.png" , width = 500 , height = 500&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
