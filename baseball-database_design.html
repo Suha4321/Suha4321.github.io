@@ -1010,10 +1010,10 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Baseball-database-design">Baseball database design<a class="anchor-link" href="#Baseball-database-design">&#182;</a></h1><p>In this project we will be working with the base basll Major League Data found in Retrosheet.
+<h1 id="Baseball-database-design">Baseball database design<a class="anchor-link" href="#Baseball-database-design">&#182;</a></h1><p>In this project we will be working with the base ball Major League Data found in Retrosheet.
 <a href="https://www.retrosheet.org/">https://www.retrosheet.org/</a></p>
-<p>The main file that we will be working with combines 127 seperate csv files from retrosheet and is in game_log.csv.We will normalise the datapoints in this table to create a database structure.</p>
-<p>In addition to the main files, there are helper files also sourced from Retrosheet:</p>
+<p>The main file that we will be working with combines 127 separate csv files from retrosheet and is in game_log.csv.We will normalise the datapoints in this table to create a database structure.</p>
+<p>In addition to the main files, the helper files also sourced from Retrosheet:</p>
 <ul>
 <li>park_codes.csv</li>
 <li>person_codes.csv</li>
@@ -1026,7 +1026,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1048,14 +1048,14 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#reading data dictionary</span>
-<span class="n">game_log</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/Suha/Projects/TestGitHub/Retrosheet/Guided Project_ Designing and Creating a Database/game_log.csv&#39;</span><span class="p">,</span> <span class="n">low_memory</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
-<span class="n">park_codes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/Suha/Projects/TestGitHub/Retrosheet/Guided Project_ Designing and Creating a Database/park_codes.csv&#39;</span><span class="p">)</span>
-<span class="n">person_code</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/Suha/Projects/TestGitHub/Retrosheet/Guided Project_ Designing and Creating a Database/person_codes.csv&#39;</span><span class="p">)</span>
-<span class="n">team</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/Suha/Projects/TestGitHub/Retrosheet/Guided Project_ Designing and Creating a Database/team_codes.csv&#39;</span><span class="p">)</span>
+<span class="n">game_log</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;game_log.csv&#39;</span><span class="p">,</span> <span class="n">low_memory</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">park_codes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;park_codes.csv&#39;</span><span class="p">)</span>
+<span class="n">person_code</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;person_codes.csv&#39;</span><span class="p">)</span>
+<span class="n">team</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;team_codes.csv&#39;</span><span class="p">)</span>
 <span class="n">game_log</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -1068,7 +1068,7 @@ h6:hover .anchor-link {
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -2087,7 +2087,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">park_codes</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -2097,10 +2097,119 @@ h6:hover .anchor-link {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>park_id</th>
+      <th>name</th>
+      <th>aka</th>
+      <th>city</th>
+      <th>state</th>
+      <th>start</th>
+      <th>end</th>
+      <th>league</th>
+      <th>notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ALB01</td>
+      <td>Riverside Park</td>
+      <td>NaN</td>
+      <td>Albany</td>
+      <td>NY</td>
+      <td>09/11/1880</td>
+      <td>05/30/1882</td>
+      <td>NL</td>
+      <td>TRN:9/11/80;6/15&amp;9/10/1881;5/16-5/18&amp;5/30/1882</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ALT01</td>
+      <td>Columbia Park</td>
+      <td>NaN</td>
+      <td>Altoona</td>
+      <td>PA</td>
+      <td>04/30/1884</td>
+      <td>05/31/1884</td>
+      <td>UA</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ANA01</td>
+      <td>Angel Stadium of Anaheim</td>
+      <td>Edison Field; Anaheim Stadium</td>
+      <td>Anaheim</td>
+      <td>CA</td>
+      <td>04/19/1966</td>
+      <td>NaN</td>
+      <td>AL</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ARL01</td>
+      <td>Arlington Stadium</td>
+      <td>NaN</td>
+      <td>Arlington</td>
+      <td>TX</td>
+      <td>04/21/1972</td>
+      <td>10/03/1993</td>
+      <td>AL</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ARL02</td>
+      <td>Rangers Ballpark in Arlington</td>
+      <td>The Ballpark in Arlington; Ameriquest Fl</td>
+      <td>Arlington</td>
+      <td>TX</td>
+      <td>04/11/1994</td>
+      <td>NaN</td>
+      <td>AL</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">game_log</span><span class="p">[</span><span class="s1">&#39;park_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -2115,7 +2224,7 @@ h6:hover .anchor-link {
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -2139,14 +2248,14 @@ Name: park_id, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The park_id in the game_log corresponds to the baseball park the match was played in, is the same as the park_id in the park_codes reference data set.</p>
+<p>The park_id in the game_log corresponds to the baseball park the match was played in ; the same as the park_id in the park_codes reference data set.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">person_code</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -2161,7 +2270,7 @@ Name: park_id, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[8]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -2256,7 +2365,7 @@ Name: park_id, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">team</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -2272,7 +2381,7 @@ Name: park_id, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[7]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -2376,7 +2485,7 @@ Name: park_id, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>the person_id in the person_code reference data corresponds to the 'XX_id' in the game_logs. They are the ids associated with the manager, player coach and umpire names. The teamids are associated with h_name and v_name in the game log. The team table provides more information about a team, the league and the corresponding franchise Id.</p>
+<p>The person_id in the person_code reference data corresponds to the 'XX_id' in the game_logs. They are the IDs associated with the manager, player, coach and umpire names. The teamids are associated with the h_name and v_name in the game log. The team table provides more information about a team, the league and the corresponding franchise Id.</p>
 
 </div>
 </div>
@@ -2402,7 +2511,7 @@ Name: park_id, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">game_log</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -2417,7 +2526,7 @@ Name: park_id, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[9]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -2438,7 +2547,7 @@ Name: date, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">game_log</span><span class="o">.</span><span class="n">shape</span>
@@ -2453,7 +2562,7 @@ Name: date, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[176]:</div>
+<div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -2469,7 +2578,7 @@ Name: date, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[177]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">game_log</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
@@ -2484,7 +2593,7 @@ Name: date, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[177]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -3506,21 +3615,21 @@ Name: date, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>game_log seems to have -</p>
+<p>game_log seem to have information about</p>
 <ul>
 <li>general information on the game</li>
 <li>the information on the winning team and losing team</li>
 <li>player's position and the names along with umpiers for the position</li>
 <li>statistics on hosting and visiting team</li>
 </ul>
-<p>Let us have a look at the teamnames and leagues</p>
+<p>Let us have a look at the team names and the leagues</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[178]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">game_log</span><span class="p">[</span><span class="s1">&#39;h_league&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span> <span class="n">plot</span> <span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">)</span>
@@ -3635,7 +3744,7 @@ kqSO4SBJ6hgOkqSO4SBJ6vwvF7LF2wXbnJUAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[179]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">league_info</span><span class="p">(</span><span class="n">league</span><span class="p">):</span>
@@ -3681,22 +3790,24 @@ FL played games from 19140413 to 19151003
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Of the following leagues here - 
-NL: National League
-AL: American League
-AA: American Association
-FL: Federal League
-PL: Players League
-UA: Union Association</p>
-<p>Nation league and American leagues have more games to them as they have been operating for a long time 
-Let us also go ahead and look at frach_id and how it ties back to the teams</p>
+<p>Of the following leagues -</p>
+<ul>
+<li>NL: National League</li>
+<li>AL: American League</li>
+<li>AA: American Association</li>
+<li>FL: Federal League</li>
+<li>PL: Players League</li>
+<li>UA: Union Association</li>
+</ul>
+<p>Nation league and American leagues have more games for them as they have been operating for a long time 
+Let us also go ahead and look at frach_id and how it ties back to the teams.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[180]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">league_team</span> <span class="o">=</span> <span class="n">game_log</span><span class="p">[[</span><span class="s1">&#39;h_league&#39;</span><span class="p">,</span><span class="s1">&#39;h_name&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">pivot_table</span> <span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;h_league&#39;</span><span class="p">,</span><span class="s1">&#39;h_name&#39;</span><span class="p">],</span> <span class="n">aggfunc</span> <span class="o">=</span> <span class="s1">&#39;count&#39;</span><span class="p">)</span>
@@ -3712,7 +3823,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams</p>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[180]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -3771,7 +3882,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[181]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># also want to explaore the franch_id </span>
@@ -3787,7 +3898,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams</p>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[181]:</div>
+<div class="prompt output_prompt">Out[13]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -3888,7 +3999,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[182]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">team</span><span class="p">[</span><span class="s1">&#39;franch_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -3904,7 +4015,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams</p>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[182]:</div>
+<div class="prompt output_prompt">Out[14]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -4007,10 +4118,10 @@ Let us also go ahead and look at frach_id and how it ties back to the teams</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are multiple defensive position numbers in data set. Let us find out what do they mean - 
+<p>There are multiple defensive position numbers in the data set. Let us find out what do they mean - 
 According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://en.wikipedia.org/wiki/Baseball_positions</a> we have the following positions -</p>
 <ul>
-<li>P0itcher</li>
+<li>Pitcher</li>
 <li>Catcher</li>
 <li>First baseman</li>
 <li>Second baseman</li>
@@ -4029,10 +4140,10 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>he database, we need a primary key for each column. Retosheet talks about the unique ids in here - 
+<p>To insert the data in the database, we need a primary key for each column. Retrosheet talks about the unique IDs in here - 
 <a href="https://www.retrosheet.org/eventfile.htm">https://www.retrosheet.org/eventfile.htm</a></p>
-<p>They define Ids as -</p>
-<p>Each game begins with a twelve character ID record which identifies the date, home team, and number of the game. For example, ATL198304080 should be read as follows. The first three characters identify the home team (the Braves). The next four are the year (1983). The next two are the month (April) using the standard numeric notation, 04, followed by the day (08). The last digit indicates if this is a single game (0), first game (1) or second game (2) if more than one game is played during a day, usually a double header The id record starts the description of a game thus ending the description of the preceding game in the file.</p>
+<p>They define ID as - 
+Each game begins with a twelve character ID record which identifies the date, home team, and number of the game. For example, ATL198304080 should be read as follows. The first three characters identify the home team (the Braves). The next four are the year (1983). The next two are the month (April) using the standard numeric notation, 04, followed by the day (08). The last digit indicates if this is a single game (0), first game (1) or second game (2) if more than one game is played during a day, usually a double header The id record starts the description of a game thus ending the description of the preceding game in the file.</p>
 <p>We will try to create this Id while storing the table in DB.</p>
 
 </div>
@@ -4055,8 +4166,8 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 <p>We will go ahead and create the database in the in Sqlite. There are three ways to do this</p>
 <ul>
 <li>Using python SQLlite library - This gives us the highest level of control over reading and writing the data. But is highly manual</li>
-<li>Using pandas - This is a handy method, but pandas sometimes converts the datatype while reading in automatically. Also the data needs to be small enough to be accomodated in momory </li>
-<li>Using SQLite shell - This is a easy method. But we run into some problems ascertaining datatypes based on the first row of the data, need to remove the header while reading the data and so on. However, we may not always have access to the shell.</li>
+<li>Using pandas - This is a handy method, but pandas sometimes converts the datatype while reading in automatically. Also the data needs to be small enough to be accommodated in the memory </li>
+<li>Using SQLite shell - This is an easy method. But we run into some problems ascertaining datatypes based on the first row of the data, need to remove the header while reading the data and so on. However, we may not always have access to the shell.</li>
 </ul>
 <p>For this excercise, we will be using pandas method.</p>
 
@@ -4065,7 +4176,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[195]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create functions needed to see this through.</span>
@@ -4107,14 +4218,14 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ideally we would like to create a source schema to store out tables but as the only schemas allowed in sqllite are main and temp we ill go ahead and use SRC_tablename convention for source table.</p>
+<p>Ideally we would like to create a source schema to store our tables, but as the only schemas allowed in sqllite are main and temp we ill go ahead and use SRC_tablename convention for the source tables.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[191]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create a dictionary mapping the required SQL table name to the pandas tablename</span>
@@ -4139,7 +4250,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[192]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">show_tables</span><span class="p">()</span>
@@ -4154,7 +4265,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[192]:</div>
+<div class="prompt output_prompt">Out[17]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -4183,21 +4294,41 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
   <tbody>
     <tr>
       <th>0</th>
-      <td>SRC_game_log</td>
+      <td>Person</td>
       <td>table</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>SRC_park_codes</td>
+      <td>ODS_Person</td>
       <td>table</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>SRC_person_codes</td>
+      <td>park</td>
       <td>table</td>
     </tr>
     <tr>
       <th>3</th>
+      <td>league</td>
+      <td>table</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SRC_game_log</td>
+      <td>table</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SRC_park_codes</td>
+      <td>table</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>SRC_person_codes</td>
+      <td>table</td>
+    </tr>
+    <tr>
+      <th>7</th>
       <td>SRC_team</td>
       <td>table</td>
     </tr>
@@ -4214,7 +4345,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[186]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#adding unique id to the game log table</span>
@@ -4230,14 +4361,14 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Based on the above description of the primary id, we should look at h_name, date, h_game_number field. Let us see of there are any duplicates with this combination</p>
+<p>Based on the above description of the primary id, we should look at h_name, date, h_game_number field. Let us see if there are any duplicates with this combination.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[193]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">q1</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
@@ -4263,7 +4394,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[193]:</div>
+<div class="prompt output_prompt">Out[19]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -4306,14 +4437,14 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are no duplicates in this column and therefore can be used safely as a key</p>
+<p>There are no duplicates in this column and therefore this ID can be used safely as a primaruy key.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[194]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># update the table with extra column game_id as unique key</span>
@@ -4337,7 +4468,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[196]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let us update the value of game_id with the unique id value</span>
@@ -4358,7 +4489,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[200]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">q4</span> <span class="o">=</span><span class="s1">&#39;&#39;&#39;</span>
@@ -4382,7 +4513,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[200]:</div>
+<div class="prompt output_prompt">Out[22]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -4463,16 +4594,16 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Normalise-the-data">Normalise the data<a class="anchor-link" href="#Normalise-the-data">&#182;</a></h1><ul>
-<li><p>We see in the gme_log that the all the id fields are followed by the name. This information is present in the person_code table. Therefore we will go ahead and remove the name fields. We should also note that the game_log is all about the game. But the player name provides us information about the player.</p>
+<li><p>We see in the game_log that the all the id fields are followed by the name. This information is present in the person_code table. Therefore, we will go ahead and remove the name fields. We should also note that the game_log is all about the game. But the player name provides us information about the player.</p>
 </li>
-<li><p>in the game_log we see the name of the team paired wiht the league name. But we get the same information from the team table. We can drop the league name field for both the visiting and the hosting team from the game log</p>
+<li><p>In the game_log we see the name of the team paired with the league name. But we get the same information from the team table. We can drop the league name field for both the visiting and the hosting team from the game log</p>
 </li>
 <li><p>In the park_codes table, we see the start date and the end date signifying the dates when the game was played at the park. This information can be obtained from the 'date' column of the game_log table and hence we will drop this</p>
 </li>
 <li><p>in game_log, we have a listing for 9 players on each team with their positions - we can remove these and have one table that tracks player appearances and their positions.</p>
 </li>
 </ul>
-<p>We will use the following DB table to create our database. we will first create the tables that do not have any foregin key - person , person_apprearance, apprearance_type, and park</p>
+<p>We will use the following DB table to create our database. We will first create the tables that do not have any foregin key - person , person_apprearance, apprearance_type, and park.</p>
 
 </div>
 </div>
@@ -4498,7 +4629,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[227]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create the table person. Since these are the reference table, we will prefix them with ODS</span>
@@ -4546,7 +4677,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[227]:</div>
+<div class="prompt output_prompt">Out[23]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -4647,7 +4778,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[230]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Let us create the park table </span>
@@ -4705,7 +4836,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[230]:</div>
+<div class="prompt output_prompt">Out[24]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -4839,7 +4970,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[248]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create the league table</span>
@@ -4879,7 +5010,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[249]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># select some values from the data </span>
@@ -4901,7 +5032,7 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[249]:</div>
+<div class="prompt output_prompt">Out[26]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -4989,15 +5120,36 @@ According to <a href="https://en.wikipedia.org/wiki/Baseball_positions">https://
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Create the appearence type table </span>
+<span class="n">q13</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    CREATE TABLE IF NOT EXISTS appearence_type(</span>
+<span class="s1">        appearance_type_id</span>
+<span class="s1">    </span>
+<span class="s1">    </span>
+<span class="s1">    )</span>
+
+<span class="s1">&#39;&#39;&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can go ahead and create the rest of the data base in such manner</p>
+<p>We can go ahead and create rest of the table laid out in the database diagram.</p>
 <p>The information used here was obtained free of
-charge from and is copyrighted by Retrosheet.  Interested
-parties may contact Retrosheet at "www.retrosheet.org".</p>
+     charge from and is copyrighted by Retrosheet.  Interested
+     parties may contact Retrosheet at "www.retrosheet.org".</p>
 
 </div>
 </div>

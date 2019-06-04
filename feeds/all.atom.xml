@@ -976,10 +976,10 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Baseball-database-design"&gt;Baseball database design&lt;a class="anchor-link" href="#Baseball-database-design"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;In this project we will be working with the base basll Major League Data found in Retrosheet.
+&lt;h1 id="Baseball-database-design"&gt;Baseball database design&lt;a class="anchor-link" href="#Baseball-database-design"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;In this project we will be working with the base ball Major League Data found in Retrosheet.
 &lt;a href="https://www.retrosheet.org/"&gt;https://www.retrosheet.org/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The main file that we will be working with combines 127 seperate csv files from retrosheet and is in game_log.csv.We will normalise the datapoints in this table to create a database structure.&lt;/p&gt;
-&lt;p&gt;In addition to the main files, there are helper files also sourced from Retrosheet:&lt;/p&gt;
+&lt;p&gt;The main file that we will be working with combines 127 separate csv files from retrosheet and is in game_log.csv.We will normalise the datapoints in this table to create a database structure.&lt;/p&gt;
+&lt;p&gt;In addition to the main files, the helper files also sourced from Retrosheet:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;park_codes.csv&lt;/li&gt;
 &lt;li&gt;person_codes.csv&lt;/li&gt;
@@ -992,7 +992,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
@@ -1014,14 +1014,14 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[5]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#reading data dictionary&lt;/span&gt;
-&lt;span class="n"&gt;game_log&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/Users/Suha/Projects/TestGitHub/Retrosheet/Guided Project_ Designing and Creating a Database/game_log.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;low_memory&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;park_codes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/Users/Suha/Projects/TestGitHub/Retrosheet/Guided Project_ Designing and Creating a Database/park_codes.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;person_code&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/Users/Suha/Projects/TestGitHub/Retrosheet/Guided Project_ Designing and Creating a Database/person_codes.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;team&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/Users/Suha/Projects/TestGitHub/Retrosheet/Guided Project_ Designing and Creating a Database/team_codes.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;game_log&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;game_log.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;low_memory&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;park_codes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;park_codes.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;person_code&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;person_codes.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;team&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;team_codes.csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;game_log&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -1034,7 +1034,7 @@ h6:hover .anchor-link {
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[5]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[2]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -2053,7 +2053,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;park_codes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -2063,10 +2063,119 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+&lt;div class="prompt output_prompt"&gt;Out[3]:&lt;/div&gt;
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;park_id&lt;/th&gt;
+      &lt;th&gt;name&lt;/th&gt;
+      &lt;th&gt;aka&lt;/th&gt;
+      &lt;th&gt;city&lt;/th&gt;
+      &lt;th&gt;state&lt;/th&gt;
+      &lt;th&gt;start&lt;/th&gt;
+      &lt;th&gt;end&lt;/th&gt;
+      &lt;th&gt;league&lt;/th&gt;
+      &lt;th&gt;notes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;ALB01&lt;/td&gt;
+      &lt;td&gt;Riverside Park&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;Albany&lt;/td&gt;
+      &lt;td&gt;NY&lt;/td&gt;
+      &lt;td&gt;09/11/1880&lt;/td&gt;
+      &lt;td&gt;05/30/1882&lt;/td&gt;
+      &lt;td&gt;NL&lt;/td&gt;
+      &lt;td&gt;TRN:9/11/80;6/15&amp;amp;9/10/1881;5/16-5/18&amp;amp;5/30/1882&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;ALT01&lt;/td&gt;
+      &lt;td&gt;Columbia Park&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;Altoona&lt;/td&gt;
+      &lt;td&gt;PA&lt;/td&gt;
+      &lt;td&gt;04/30/1884&lt;/td&gt;
+      &lt;td&gt;05/31/1884&lt;/td&gt;
+      &lt;td&gt;UA&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;ANA01&lt;/td&gt;
+      &lt;td&gt;Angel Stadium of Anaheim&lt;/td&gt;
+      &lt;td&gt;Edison Field; Anaheim Stadium&lt;/td&gt;
+      &lt;td&gt;Anaheim&lt;/td&gt;
+      &lt;td&gt;CA&lt;/td&gt;
+      &lt;td&gt;04/19/1966&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;AL&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;ARL01&lt;/td&gt;
+      &lt;td&gt;Arlington Stadium&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;Arlington&lt;/td&gt;
+      &lt;td&gt;TX&lt;/td&gt;
+      &lt;td&gt;04/21/1972&lt;/td&gt;
+      &lt;td&gt;10/03/1993&lt;/td&gt;
+      &lt;td&gt;AL&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;ARL02&lt;/td&gt;
+      &lt;td&gt;Rangers Ballpark in Arlington&lt;/td&gt;
+      &lt;td&gt;The Ballpark in Arlington; Ameriquest Fl&lt;/td&gt;
+      &lt;td&gt;Arlington&lt;/td&gt;
+      &lt;td&gt;TX&lt;/td&gt;
+      &lt;td&gt;04/11/1994&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;AL&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[6]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;game_log&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;park_id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;value_counts&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -2081,7 +2190,7 @@ h6:hover .anchor-link {
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[6]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[4]:&lt;/div&gt;
 
 
 
@@ -2105,14 +2214,14 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The park_id in the game_log corresponds to the baseball park the match was played in, is the same as the park_id in the park_codes reference data set.&lt;/p&gt;
+&lt;p&gt;The park_id in the game_log corresponds to the baseball park the match was played in ; the same as the park_id in the park_codes reference data set.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[8]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;person_code&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -2127,7 +2236,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[8]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[5]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -2222,7 +2331,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[7]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;team&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -2238,7 +2347,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[7]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[6]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -2342,7 +2451,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;the person_id in the person_code reference data corresponds to the 'XX_id' in the game_logs. They are the ids associated with the manager, player coach and umpire names. The teamids are associated with h_name and v_name in the game log. The team table provides more information about a team, the league and the corresponding franchise Id.&lt;/p&gt;
+&lt;p&gt;The person_id in the person_code reference data corresponds to the 'XX_id' in the game_logs. They are the IDs associated with the manager, player, coach and umpire names. The teamids are associated with the h_name and v_name in the game log. The team table provides more information about a team, the league and the corresponding franchise Id.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2368,7 +2477,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[9]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;game_log&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;value_counts&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -2383,7 +2492,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[9]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[7]:&lt;/div&gt;
 
 
 
@@ -2404,7 +2513,7 @@ Name: date, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[176]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[8]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;game_log&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
@@ -2419,7 +2528,7 @@ Name: date, dtype: int64&lt;/pre&gt;
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[176]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[8]:&lt;/div&gt;
 
 
 
@@ -2435,7 +2544,7 @@ Name: date, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[177]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;game_log&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -2450,7 +2559,7 @@ Name: date, dtype: int64&lt;/pre&gt;
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[177]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[9]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -3472,21 +3581,21 @@ Name: date, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;game_log seems to have -&lt;/p&gt;
+&lt;p&gt;game_log seem to have information about&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;general information on the game&lt;/li&gt;
 &lt;li&gt;the information on the winning team and losing team&lt;/li&gt;
 &lt;li&gt;player's position and the names along with umpiers for the position&lt;/li&gt;
 &lt;li&gt;statistics on hosting and visiting team&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Let us have a look at the teamnames and leagues&lt;/p&gt;
+&lt;p&gt;Let us have a look at the team names and the leagues&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[178]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[10]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;game_log&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;h_league&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;value_counts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dropna&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;plot&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -3601,7 +3710,7 @@ kqSO4SBJ6hgOkqSO4SBJ6vwvF7LF2wXbnJUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[179]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;league_info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;league&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -3647,22 +3756,24 @@ FL played games from 19140413 to 19151003
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Of the following leagues here - 
-NL: National League
-AL: American League
-AA: American Association
-FL: Federal League
-PL: Players League
-UA: Union Association&lt;/p&gt;
-&lt;p&gt;Nation league and American leagues have more games to them as they have been operating for a long time 
-Let us also go ahead and look at frach_id and how it ties back to the teams&lt;/p&gt;
+&lt;p&gt;Of the following leagues -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NL: National League&lt;/li&gt;
+&lt;li&gt;AL: American League&lt;/li&gt;
+&lt;li&gt;AA: American Association&lt;/li&gt;
+&lt;li&gt;FL: Federal League&lt;/li&gt;
+&lt;li&gt;PL: Players League&lt;/li&gt;
+&lt;li&gt;UA: Union Association&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nation league and American leagues have more games for them as they have been operating for a long time 
+Let us also go ahead and look at frach_id and how it ties back to the teams.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[180]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[12]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;league_team&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;game_log&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;h_league&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;h_name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pivot_table&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;h_league&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;h_name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;aggfunc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;count&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -3678,7 +3789,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams&lt;/
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[180]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[12]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -3737,7 +3848,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams&lt;/
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[181]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[13]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# also want to explaore the franch_id &lt;/span&gt;
@@ -3753,7 +3864,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams&lt;/
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[181]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[13]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -3854,7 +3965,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams&lt;/
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[182]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[14]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;team&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;franch_id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;value_counts&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -3870,7 +3981,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams&lt;/
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[182]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[14]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -3973,10 +4084,10 @@ Let us also go ahead and look at frach_id and how it ties back to the teams&lt;/
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;There are multiple defensive position numbers in data set. Let us find out what do they mean - 
+&lt;p&gt;There are multiple defensive position numbers in the data set. Let us find out what do they mean - 
 According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;https://en.wikipedia.org/wiki/Baseball_positions&lt;/a&gt; we have the following positions -&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;P0itcher&lt;/li&gt;
+&lt;li&gt;Pitcher&lt;/li&gt;
 &lt;li&gt;Catcher&lt;/li&gt;
 &lt;li&gt;First baseman&lt;/li&gt;
 &lt;li&gt;Second baseman&lt;/li&gt;
@@ -3995,10 +4106,10 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;he database, we need a primary key for each column. Retosheet talks about the unique ids in here - 
+&lt;p&gt;To insert the data in the database, we need a primary key for each column. Retrosheet talks about the unique IDs in here - 
 &lt;a href="https://www.retrosheet.org/eventfile.htm"&gt;https://www.retrosheet.org/eventfile.htm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;They define Ids as -&lt;/p&gt;
-&lt;p&gt;Each game begins with a twelve character ID record which identifies the date, home team, and number of the game. For example, ATL198304080 should be read as follows. The first three characters identify the home team (the Braves). The next four are the year (1983). The next two are the month (April) using the standard numeric notation, 04, followed by the day (08). The last digit indicates if this is a single game (0), first game (1) or second game (2) if more than one game is played during a day, usually a double header The id record starts the description of a game thus ending the description of the preceding game in the file.&lt;/p&gt;
+&lt;p&gt;They define ID as - 
+Each game begins with a twelve character ID record which identifies the date, home team, and number of the game. For example, ATL198304080 should be read as follows. The first three characters identify the home team (the Braves). The next four are the year (1983). The next two are the month (April) using the standard numeric notation, 04, followed by the day (08). The last digit indicates if this is a single game (0), first game (1) or second game (2) if more than one game is played during a day, usually a double header The id record starts the description of a game thus ending the description of the preceding game in the file.&lt;/p&gt;
 &lt;p&gt;We will try to create this Id while storing the table in DB.&lt;/p&gt;
 
 &lt;/div&gt;
@@ -4021,8 +4132,8 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;p&gt;We will go ahead and create the database in the in Sqlite. There are three ways to do this&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Using python SQLlite library - This gives us the highest level of control over reading and writing the data. But is highly manual&lt;/li&gt;
-&lt;li&gt;Using pandas - This is a handy method, but pandas sometimes converts the datatype while reading in automatically. Also the data needs to be small enough to be accomodated in momory &lt;/li&gt;
-&lt;li&gt;Using SQLite shell - This is a easy method. But we run into some problems ascertaining datatypes based on the first row of the data, need to remove the header while reading the data and so on. However, we may not always have access to the shell.&lt;/li&gt;
+&lt;li&gt;Using pandas - This is a handy method, but pandas sometimes converts the datatype while reading in automatically. Also the data needs to be small enough to be accommodated in the memory &lt;/li&gt;
+&lt;li&gt;Using SQLite shell - This is an easy method. But we run into some problems ascertaining datatypes based on the first row of the data, need to remove the header while reading the data and so on. However, we may not always have access to the shell.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For this excercise, we will be using pandas method.&lt;/p&gt;
 
@@ -4031,7 +4142,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[195]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[15]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Create functions needed to see this through.&lt;/span&gt;
@@ -4073,14 +4184,14 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Ideally we would like to create a source schema to store out tables but as the only schemas allowed in sqllite are main and temp we ill go ahead and use SRC_tablename convention for source table.&lt;/p&gt;
+&lt;p&gt;Ideally we would like to create a source schema to store our tables, but as the only schemas allowed in sqllite are main and temp we ill go ahead and use SRC_tablename convention for the source tables.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[191]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[16]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#create a dictionary mapping the required SQL table name to the pandas tablename&lt;/span&gt;
@@ -4105,7 +4216,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[192]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[17]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;show_tables&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -4120,7 +4231,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[192]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[17]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -4149,21 +4260,41 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;th&gt;0&lt;/th&gt;
-      &lt;td&gt;SRC_game_log&lt;/td&gt;
+      &lt;td&gt;Person&lt;/td&gt;
       &lt;td&gt;table&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;th&gt;1&lt;/th&gt;
-      &lt;td&gt;SRC_park_codes&lt;/td&gt;
+      &lt;td&gt;ODS_Person&lt;/td&gt;
       &lt;td&gt;table&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;th&gt;2&lt;/th&gt;
-      &lt;td&gt;SRC_person_codes&lt;/td&gt;
+      &lt;td&gt;park&lt;/td&gt;
       &lt;td&gt;table&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;league&lt;/td&gt;
+      &lt;td&gt;table&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;SRC_game_log&lt;/td&gt;
+      &lt;td&gt;table&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;5&lt;/th&gt;
+      &lt;td&gt;SRC_park_codes&lt;/td&gt;
+      &lt;td&gt;table&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;6&lt;/th&gt;
+      &lt;td&gt;SRC_person_codes&lt;/td&gt;
+      &lt;td&gt;table&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;7&lt;/th&gt;
       &lt;td&gt;SRC_team&lt;/td&gt;
       &lt;td&gt;table&lt;/td&gt;
     &lt;/tr&gt;
@@ -4180,7 +4311,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[186]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[18]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#adding unique id to the game log table&lt;/span&gt;
@@ -4196,14 +4327,14 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Based on the above description of the primary id, we should look at h_name, date, h_game_number field. Let us see of there are any duplicates with this combination&lt;/p&gt;
+&lt;p&gt;Based on the above description of the primary id, we should look at h_name, date, h_game_number field. Let us see if there are any duplicates with this combination.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[193]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[19]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;q1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
@@ -4229,7 +4360,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[193]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[19]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -4272,14 +4403,14 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;There are no duplicates in this column and therefore can be used safely as a key&lt;/p&gt;
+&lt;p&gt;There are no duplicates in this column and therefore this ID can be used safely as a primaruy key.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[194]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[20]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# update the table with extra column game_id as unique key&lt;/span&gt;
@@ -4303,7 +4434,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[196]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[21]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# let us update the value of game_id with the unique id value&lt;/span&gt;
@@ -4324,7 +4455,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[200]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[22]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;q4&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
@@ -4348,7 +4479,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[200]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[22]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -4429,16 +4560,16 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h1 id="Normalise-the-data"&gt;Normalise the data&lt;a class="anchor-link" href="#Normalise-the-data"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;We see in the gme_log that the all the id fields are followed by the name. This information is present in the person_code table. Therefore we will go ahead and remove the name fields. We should also note that the game_log is all about the game. But the player name provides us information about the player.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;We see in the game_log that the all the id fields are followed by the name. This information is present in the person_code table. Therefore, we will go ahead and remove the name fields. We should also note that the game_log is all about the game. But the player name provides us information about the player.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;in the game_log we see the name of the team paired wiht the league name. But we get the same information from the team table. We can drop the league name field for both the visiting and the hosting team from the game log&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;In the game_log we see the name of the team paired with the league name. But we get the same information from the team table. We can drop the league name field for both the visiting and the hosting team from the game log&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;In the park_codes table, we see the start date and the end date signifying the dates when the game was played at the park. This information can be obtained from the 'date' column of the game_log table and hence we will drop this&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;in game_log, we have a listing for 9 players on each team with their positions - we can remove these and have one table that tracks player appearances and their positions.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;We will use the following DB table to create our database. we will first create the tables that do not have any foregin key - person , person_apprearance, apprearance_type, and park&lt;/p&gt;
+&lt;p&gt;We will use the following DB table to create our database. We will first create the tables that do not have any foregin key - person , person_apprearance, apprearance_type, and park.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4464,7 +4595,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[227]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[23]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Create the table person. Since these are the reference table, we will prefix them with ODS&lt;/span&gt;
@@ -4512,7 +4643,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[227]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[23]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -4613,7 +4744,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[230]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[24]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#Let us create the park table &lt;/span&gt;
@@ -4671,7 +4802,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[230]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[24]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -4805,7 +4936,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[248]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[25]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Create the league table&lt;/span&gt;
@@ -4845,7 +4976,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[249]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[26]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# select some values from the data &lt;/span&gt;
@@ -4867,7 +4998,7 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 
 
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[249]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[26]:&lt;/div&gt;
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
@@ -4955,15 +5086,36 @@ According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;ht
 &lt;/div&gt;
 
 &lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[27]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#Create the appearence type table &lt;/span&gt;
+&lt;span class="n"&gt;q13&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;    CREATE TABLE IF NOT EXISTS appearence_type(&lt;/span&gt;
+&lt;span class="s1"&gt;        appearance_type_id&lt;/span&gt;
+&lt;span class="s1"&gt;    &lt;/span&gt;
+&lt;span class="s1"&gt;    &lt;/span&gt;
+&lt;span class="s1"&gt;    )&lt;/span&gt;
+
+&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;We can go ahead and create the rest of the data base in such manner&lt;/p&gt;
+&lt;p&gt;We can go ahead and create rest of the table laid out in the database diagram.&lt;/p&gt;
 &lt;p&gt;The information used here was obtained free of
-charge from and is copyrighted by Retrosheet.  Interested
-parties may contact Retrosheet at "www.retrosheet.org".&lt;/p&gt;
+     charge from and is copyrighted by Retrosheet.  Interested
+     parties may contact Retrosheet at "www.retrosheet.org".&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
