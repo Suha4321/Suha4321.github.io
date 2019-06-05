@@ -2214,7 +2214,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The park_id in the game_log corresponds to the baseball park the match was played in ; the same as the park_id in the park_codes reference data set.&lt;/p&gt;
+&lt;p&gt;The park_id in the game_log corresponds to the baseball park the match was played in; the same as the park_id in the park_codes reference data set.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2470,7 +2470,7 @@ Name: park_id, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;For the game_log We have data from 1871 - 2016.&lt;/p&gt;
+&lt;p&gt;For the game_log, we have data from 1871 - 2016.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3581,14 +3581,14 @@ Name: date, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;game_log seem to have information about&lt;/p&gt;
+&lt;p&gt;The game_log seems to have information about&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;general information on the game&lt;/li&gt;
 &lt;li&gt;the information on the winning team and losing team&lt;/li&gt;
 &lt;li&gt;player's position and the names along with umpiers for the position&lt;/li&gt;
 &lt;li&gt;statistics on hosting and visiting team&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Let us have a look at the team names and the leagues&lt;/p&gt;
+&lt;p&gt;Let us have a look at the team names and the leagues.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3765,8 +3765,8 @@ FL played games from 19140413 to 19151003
 &lt;li&gt;PL: Players League&lt;/li&gt;
 &lt;li&gt;UA: Union Association&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Nation league and American leagues have more games for them as they have been operating for a long time 
-Let us also go ahead and look at frach_id and how it ties back to the teams.&lt;/p&gt;
+&lt;p&gt;Nation League and American Leagues have more games for them as they have been operating for a long time. 
+Let us also go ahead and look at the frach_id and how it ties back to the teams.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3851,7 +3851,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams.&lt;
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[13]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# also want to explaore the franch_id &lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# exploring franch_id&lt;/span&gt;
 &lt;span class="n"&gt;team&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -4074,7 +4074,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams.&lt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;There are cases when the team assumes a different name, in different city and league, but is represented by the same franchise id&lt;/p&gt;
+&lt;p&gt;There are cases when the team assumes a different name, in different city and league, but is represented by the same franchise id.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4084,8 +4084,7 @@ Let us also go ahead and look at frach_id and how it ties back to the teams.&lt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;There are multiple defensive position numbers in the data set. Let us find out what do they mean - 
-According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;https://en.wikipedia.org/wiki/Baseball_positions&lt;/a&gt; we have the following positions -&lt;/p&gt;
+&lt;p&gt;There are multiple defensive position numbers in the data set. According to &lt;a href="https://en.wikipedia.org/wiki/Baseball_positions"&gt;https://en.wikipedia.org/wiki/Baseball_positions&lt;/a&gt; we have the following positions -&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Pitcher&lt;/li&gt;
 &lt;li&gt;Catcher&lt;/li&gt;
