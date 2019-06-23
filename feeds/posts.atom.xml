@@ -6118,7 +6118,7 @@ TkSuQmCC
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="python seaboard spicy"></category></entry><entry><title>How to design a baseball database</title><link href="/baseball-database_design.html" rel="alternate"></link><published>2019-06-03T20:00:00-04:00</published><updated>2019-06-03T20:00:00-04:00</updated><author><name>Suhasini Radhakrishnan</name></author><id>tag:None,2019-06-03:/baseball-database_design.html</id><summary type="html">&lt;p&gt;Designing baseball database with pandas, Sqlite and DBDesigner.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="python seaborn scipy"></category></entry><entry><title>How to design a baseball database</title><link href="/baseball-database_design.html" rel="alternate"></link><published>2019-06-03T20:00:00-04:00</published><updated>2019-06-03T20:00:00-04:00</updated><author><name>Suhasini Radhakrishnan</name></author><id>tag:None,2019-06-03:/baseball-database_design.html</id><summary type="html">&lt;p&gt;Designing baseball database with pandas, Sqlite and DBDesigner.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
