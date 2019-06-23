@@ -6087,65 +6087,6 @@ TkSuQmCC
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[27]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;whitegrid&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-
-&lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lineplot&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;calculated_host_listings_count&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;price&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;hue&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;room_type&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;listing&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_xticklabels&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_xticklabels&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;&lt;span class="n"&gt;rotation&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontdict&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
- &lt;span class="s1"&gt;&amp;#39;verticalalignment&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;baseline&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
- &lt;span class="s1"&gt;&amp;#39;horizontalalignment&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;right&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
-&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;
-&lt;div class="prompt"&gt;&lt;/div&gt;
-
-&lt;div class="output_subarea output_text output_error"&gt;
-&lt;pre&gt;
-&lt;span class="ansi-red-fg"&gt;---------------------------------------------------------------------------&lt;/span&gt;
-&lt;span class="ansi-red-fg"&gt;AttributeError&lt;/span&gt;                            Traceback (most recent call last)
-&lt;span class="ansi-green-fg"&gt;&amp;lt;ipython-input-27-c5b54076c2a1&amp;gt;&lt;/span&gt; in &lt;span class="ansi-cyan-fg"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;()&lt;/span&gt;
-&lt;span class="ansi-green-intense-fg ansi-bold"&gt;      2&lt;/span&gt; 
-&lt;span class="ansi-green-intense-fg ansi-bold"&gt;      3&lt;/span&gt; 
-&lt;span class="ansi-green-fg"&gt;----&amp;gt; 4&lt;/span&gt;&lt;span class="ansi-red-fg"&gt; &lt;/span&gt;ax &lt;span class="ansi-blue-fg"&gt;=&lt;/span&gt; sns&lt;span class="ansi-blue-fg"&gt;.&lt;/span&gt;lineplot &lt;span class="ansi-blue-fg"&gt;(&lt;/span&gt;x &lt;span class="ansi-blue-fg"&gt;=&lt;/span&gt; &lt;span class="ansi-blue-fg"&gt;&amp;#39;calculated_host_listings_count&amp;#39;&lt;/span&gt; &lt;span class="ansi-blue-fg"&gt;,&lt;/span&gt; y &lt;span class="ansi-blue-fg"&gt;=&lt;/span&gt; &lt;span class="ansi-blue-fg"&gt;&amp;#39;price&amp;#39;&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;,&lt;/span&gt; hue &lt;span class="ansi-blue-fg"&gt;=&lt;/span&gt; &lt;span class="ansi-blue-fg"&gt;&amp;#39;room_type&amp;#39;&lt;/span&gt; &lt;span class="ansi-blue-fg"&gt;,&lt;/span&gt; data &lt;span class="ansi-blue-fg"&gt;=&lt;/span&gt; listing&lt;span class="ansi-blue-fg"&gt;)&lt;/span&gt;
-&lt;span class="ansi-green-intense-fg ansi-bold"&gt;      5&lt;/span&gt; ax.set_xticklabels(ax.get_xticklabels(),rotation=30, fontdict = {
-&lt;span class="ansi-green-intense-fg ansi-bold"&gt;      6&lt;/span&gt;  &lt;span class="ansi-blue-fg"&gt;&amp;#39;verticalalignment&amp;#39;&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;:&lt;/span&gt; &lt;span class="ansi-blue-fg"&gt;&amp;#39;baseline&amp;#39;&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;,&lt;/span&gt;
-
-&lt;span class="ansi-red-fg"&gt;AttributeError&lt;/span&gt;: module &amp;#39;seaborn&amp;#39; has no attribute &amp;#39;lineplot&amp;#39;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
  
 
 
