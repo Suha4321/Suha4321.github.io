@@ -985,10 +985,9 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;I have been hosting airbnb in my home basement as a parr time passive income source. Things have been easy after the first set up. I am a single mom and have to be very careful and selective about my guests. I noticed that I have been turning down many guests because of this. One of my fiends suggested to open up full time AirBnb business. In order to do so, I need to set up AirBnB in areas that have higher visitor footfall. One of uch areas is Jersey City. let us go ahead and look at the jersey city data.&lt;/p&gt;
+&lt;p&gt;I have been hosting AirBnB in my home basement as a part time passive income source. Things have been easy after the first set up. I live with my daughter and have to be very careful and selective about my guests. I noticed that I have been turning down many guests because of this. One of my friends suggested to open up a full time AirBnb business. In order to do so, I need to set up AirBnB in areas that have a higher visitor footfall. One of such areas is Jersey City. In this post I want to find out what areas in Jersey city have potential and what might be the average going rate for my listing.&lt;/p&gt;
 &lt;p&gt;The data for jersey city listing was taken from &lt;a href="http://insideairbnb.com/get-the-data.html"&gt;http://insideairbnb.com/get-the-data.html&lt;/a&gt;
-we are using the summary data - 
-listing and the reviews for analysis.&lt;/p&gt;
+we are using the summary data - 'listing' for analysis.&lt;/p&gt;
 &lt;p&gt;To understand the data a little better, tom slee has explained the column headers in this post - &lt;a href="http://tomslee.net/airbnb-data-collection-get-the-data"&gt;http://tomslee.net/airbnb-data-collection-get-the-data&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -1851,7 +1850,7 @@ AAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Looks like the maximum booking comes from the ward E. Let us see if the neighborhood has any bearing on the multiple listing&lt;/p&gt;
+&lt;p&gt;It looks like the maximum booking comes from the ward E. Let us see if the neighborhood has any bearing on the multiple listing.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
