@@ -5186,7 +5186,7 @@ Each game begins with a twelve character ID record which identifies the date, ho
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="python Sqlite3 DbDesigner"></category></entry><entry><title>If I am a music store manager</title><link href="/chinook-music-store.html" rel="alternate"></link><published>2019-05-25T20:00:00-04:00</published><updated>2019-05-25T20:00:00-04:00</updated><author><name>Suhasini Radhakrishnan</name></author><id>tag:None,2019-05-25:/chinook-music-store.html</id><summary type="html">&lt;p&gt;Analyzing music store data with pandas and Sqlite&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="python Sqlite3 DbDesigner"></category></entry><entry><title>Chinook music store data</title><link href="/chinook-music-store.html" rel="alternate"></link><published>2019-05-23T20:00:00-04:00</published><updated>2019-05-23T20:00:00-04:00</updated><author><name>Suhasini Radhakrishnan</name></author><id>tag:None,2019-05-23:/chinook-music-store.html</id><summary type="html">&lt;p&gt;Analyzing chinook music store data&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -9567,7 +9567,7 @@ IQlaIYQQog1J0AohhBBtSIJWCCGEaEP/BZ2do4k9c4i5AAAAAElFTkSuQmCC
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="python Sqlite3"></category></entry><entry><title>First Post</title><link href="/first-post.html" rel="alternate"></link><published>2016-06-08T20:00:00-04:00</published><updated>2016-06-08T20:00:00-04:00</updated><author><name>me</name></author><id>tag:None,2016-06-08:/first-post.html</id><summary type="html">&lt;p&gt;My first post, read it to find out.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="python SQLite3 DBDesign"></category></entry><entry><title>First Post</title><link href="/first-post.html" rel="alternate"></link><published>2016-06-08T20:00:00-04:00</published><updated>2016-06-08T20:00:00-04:00</updated><author><name>me</name></author><id>tag:None,2016-06-08:/first-post.html</id><summary type="html">&lt;p&gt;My first post, read it to find out.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
