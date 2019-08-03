@@ -987,11 +987,11 @@ h6:hover .anchor-link {
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;In this project, we'll be predicting the number of upvotes a submission in a subreddit received, based on their title. Because upvotes are an indicator of popularity, we'll discover which types of articles tend to be the most popular.&lt;/p&gt;
 &lt;p&gt;The submissions are based on the hot section in the subreddit which sorts the submission based on the submission time and upvotes.The program iterates through multiple subreddits to find the popular submission. As a sample we have considered the two subreddit - python and politics.&lt;/p&gt;
-&lt;p&gt;The program runs Linear regression and ridge regression to find out the predicted value of upvotes for the testing set.&lt;/p&gt;
-&lt;p&gt;for the regression,  Each word in title is tokenized and is converted to a numerical representations. Only the words that appear more than the 5 times are considered as feattures to avoid overfitting. Only the words that appear less than 50 times are considered as they might mostly be stop word and might skew the result.&lt;/p&gt;
+&lt;p&gt;The program runs linear regression and ridge regression to find out the predicted value of upvotes for the testing set.&lt;/p&gt;
+&lt;p&gt;for the regression,  each word in title is tokenized and is converted to a numerical representations. Only the words that appear more than the 5 times are considered as features to avoid overfitting. Only the words that appear less than 50 times are considered as they might mostly be stop word and might skew the result.&lt;/p&gt;
 &lt;p&gt;In the end we should be able to see the top posts in each of the subreddit.&lt;/p&gt;
 &lt;p&gt;The program can be improved by - 
-1) finding out the proper upper cut off and lower cut of point for considering the features.
+1) Finding out the proper upper cut off and lower cut of point for considering the features.
 2) Increasing the dataset set size
 3) Adding features like headline lenght and word length
 4) Using other algorithms like random forest&lt;/p&gt;
@@ -1198,8 +1198,6 @@ h6:hover .anchor-link {
     &lt;span class="n"&gt;top_5&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;reddit_predictions&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;predicted_ups&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ascending&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;title&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;num_top_posts&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;subreddit_top_5&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;one_subreddit&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;top_5&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
      
-
-                
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
@@ -1227,6 +1225,16 @@ Analysis for subreddit:politics
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;lets have a look at the top posts in the training dataset. We will be using predictions from the algorithm that has MSE closer to the testing dataset.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
